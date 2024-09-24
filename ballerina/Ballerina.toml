@@ -1,7 +1,9 @@
-[ballerina]
+[package]
 org = "akindu"
+name = "ballerina"
 version = "0.1.0"
 
-[[platform.libraries]]
-module = "task_distributor"
+[platform]
+
+[[platform.java11.dependency]]
 path = "./src/task_distributor"
