@@ -1,0 +1,501 @@
+Employee ID,Name,Skills,Availability
+1,Employee 1,"['UI Design', 'DevOps', 'Data Analysis', 'Machine Learning', 'Testing']",False
+2,Employee 2,"['Frontend Development', 'Testing', 'Database Management', 'Project Management', 'DevOps']",True
+3,Employee 3,"['Project Management', 'Frontend Development', 'DevOps', 'Testing']",False
+4,Employee 4,"['Machine Learning', 'DevOps']",True
+5,Employee 5,"['Machine Learning', 'Database Management', 'Cybersecurity']",True
+6,Employee 6,"['Backend Development', 'DevOps', 'Database Management', 'Machine Learning']",False
+7,Employee 7,"['Project Management', 'Backend Development', 'Testing', 'Cybersecurity']",False
+8,Employee 8,['Backend Development'],True
+9,Employee 9,"['Machine Learning', 'Frontend Development', 'Project Management', 'Cybersecurity']",False
+10,Employee 10,"['DevOps', 'UI Design', 'Machine Learning', 'Backend Development']",True
+11,Employee 11,"['Backend Development', 'UI Design', 'Cybersecurity', 'Frontend Development']",True
+12,Employee 12,"['Frontend Development', 'Machine Learning', 'Database Management', 'Testing']",False
+13,Employee 13,"['Backend Development', 'Cybersecurity', 'Machine Learning', 'DevOps', 'Testing']",True
+14,Employee 14,"['Data Analysis', 'Database Management', 'Frontend Development', 'Backend Development']",False
+15,Employee 15,['Machine Learning'],True
+16,Employee 16,"['Project Management', 'Testing', 'UI Design', 'Machine Learning']",False
+17,Employee 17,"['Testing', 'Database Management', 'Cybersecurity', 'Frontend Development']",True
+18,Employee 18,"['DevOps', 'Frontend Development']",False
+19,Employee 19,"['Testing', 'Cybersecurity', 'UI Design', 'Frontend Development', 'DevOps']",False
+20,Employee 20,"['Machine Learning', 'Cybersecurity', 'Testing', 'Project Management', 'Database Management']",False
+21,Employee 21,['DevOps'],True
+22,Employee 22,"['Testing', 'Cybersecurity', 'Data Analysis']",True
+23,Employee 23,"['Database Management', 'Machine Learning', 'DevOps', 'Data Analysis']",False
+24,Employee 24,"['Project Management', 'Cybersecurity', 'Backend Development']",True
+25,Employee 25,"['Database Management', 'UI Design', 'Frontend Development', 'Cybersecurity']",True
+26,Employee 26,"['Machine Learning', 'Data Analysis', 'Project Management', 'DevOps', 'Backend Development']",True
+27,Employee 27,['Database Management'],True
+28,Employee 28,"['DevOps', 'Data Analysis', 'Project Management']",False
+29,Employee 29,"['Database Management', 'UI Design', 'DevOps']",False
+30,Employee 30,"['Cybersecurity', 'Testing', 'DevOps', 'Frontend Development', 'UI Design']",True
+31,Employee 31,"['DevOps', 'Project Management', 'Frontend Development']",False
+32,Employee 32,"['UI Design', 'Database Management', 'Cybersecurity']",False
+33,Employee 33,"['Machine Learning', 'Testing', 'UI Design']",True
+34,Employee 34,"['DevOps', 'Project Management', 'Cybersecurity', 'UI Design']",False
+35,Employee 35,"['Testing', 'Cybersecurity', 'DevOps', 'Frontend Development']",True
+36,Employee 36,"['Data Analysis', 'Frontend Development', 'Backend Development', 'Machine Learning', 'Testing']",False
+37,Employee 37,"['Machine Learning', 'DevOps', 'Testing']",True
+38,Employee 38,['UI Design'],True
+39,Employee 39,"['Data Analysis', 'Machine Learning', 'UI Design']",True
+40,Employee 40,"['Database Management', 'Backend Development', 'Machine Learning', 'Frontend Development']",False
+41,Employee 41,"['Testing', 'DevOps']",True
+42,Employee 42,"['Backend Development', 'Cybersecurity', 'DevOps', 'Data Analysis']",False
+43,Employee 43,"['Frontend Development', 'Cybersecurity', 'Database Management']",True
+44,Employee 44,['Machine Learning'],False
+45,Employee 45,"['Data Analysis', 'Testing', 'Machine Learning']",False
+46,Employee 46,"['Machine Learning', 'Backend Development']",True
+47,Employee 47,"['Testing', 'UI Design', 'Project Management']",True
+48,Employee 48,['Backend Development'],True
+49,Employee 49,"['Cybersecurity', 'Data Analysis', 'Database Management']",True
+50,Employee 50,"['Database Management', 'Data Analysis', 'Project Management']",True
+51,Employee 51,"['Cybersecurity', 'Data Analysis']",False
+52,Employee 52,"['Project Management', 'Machine Learning', 'Backend Development', 'Database Management']",False
+53,Employee 53,['Data Analysis'],True
+54,Employee 54,"['Testing', 'Backend Development', 'Frontend Development', 'UI Design', 'Project Management']",True
+55,Employee 55,"['Machine Learning', 'Cybersecurity', 'Project Management', 'Testing', 'Frontend Development']",True
+56,Employee 56,"['Cybersecurity', 'Database Management', 'Testing']",False
+57,Employee 57,"['Frontend Development', 'Database Management', 'Project Management']",False
+58,Employee 58,"['Project Management', 'DevOps', 'Database Management', 'Testing', 'UI Design']",False
+59,Employee 59,"['Database Management', 'Data Analysis', 'Machine Learning', 'Testing']",True
+60,Employee 60,['Backend Development'],True
+61,Employee 61,['Database Management'],False
+62,Employee 62,"['Data Analysis', 'UI Design', 'Machine Learning', 'Testing', 'Frontend Development']",True
+63,Employee 63,"['Project Management', 'Backend Development', 'Machine Learning']",False
+64,Employee 64,"['Testing', 'Frontend Development', 'Project Management', 'UI Design', 'Machine Learning']",True
+65,Employee 65,['Testing'],False
+66,Employee 66,"['Frontend Development', 'Backend Development', 'Testing', 'Project Management']",False
+67,Employee 67,['Frontend Development'],False
+68,Employee 68,"['UI Design', 'DevOps', 'Backend Development']",False
+69,Employee 69,"['Backend Development', 'Testing']",True
+70,Employee 70,['Backend Development'],False
+71,Employee 71,"['UI Design', 'Data Analysis']",False
+72,Employee 72,"['Frontend Development', 'Testing', 'Cybersecurity']",False
+73,Employee 73,"['DevOps', 'Cybersecurity', 'UI Design', 'Project Management']",True
+74,Employee 74,"['Testing', 'Database Management', 'DevOps', 'Project Management']",False
+75,Employee 75,"['UI Design', 'Project Management']",True
+76,Employee 76,['Database Management'],True
+77,Employee 77,"['Backend Development', 'Cybersecurity', 'UI Design']",True
+78,Employee 78,['DevOps'],False
+79,Employee 79,"['Backend Development', 'Data Analysis', 'Project Management', 'Database Management']",False
+80,Employee 80,"['Frontend Development', 'Data Analysis', 'Machine Learning', 'UI Design', 'Project Management']",False
+81,Employee 81,"['Database Management', 'Testing', 'Frontend Development', 'Project Management']",True
+82,Employee 82,"['Backend Development', 'DevOps', 'Database Management', 'Cybersecurity', 'UI Design']",False
+83,Employee 83,"['Data Analysis', 'Backend Development', 'Frontend Development', 'Project Management', 'Database Management']",False
+84,Employee 84,"['Testing', 'Cybersecurity']",False
+85,Employee 85,['Cybersecurity'],True
+86,Employee 86,"['UI Design', 'Project Management', 'DevOps', 'Testing']",True
+87,Employee 87,"['Machine Learning', 'Testing', 'DevOps', 'Project Management', 'Database Management']",False
+88,Employee 88,"['Cybersecurity', 'UI Design', 'Project Management', 'Data Analysis', 'DevOps']",True
+89,Employee 89,"['Frontend Development', 'Testing', 'Backend Development', 'UI Design']",True
+90,Employee 90,"['DevOps', 'Testing', 'Project Management']",False
+91,Employee 91,"['DevOps', 'Cybersecurity', 'Database Management', 'Project Management']",True
+92,Employee 92,"['Data Analysis', 'Backend Development']",False
+93,Employee 93,"['Backend Development', 'Data Analysis', 'Project Management']",True
+94,Employee 94,"['DevOps', 'Database Management', 'Testing']",False
+95,Employee 95,"['Backend Development', 'DevOps', 'Testing', 'Machine Learning', 'UI Design']",True
+96,Employee 96,"['DevOps', 'Data Analysis', 'Cybersecurity', 'Database Management']",True
+97,Employee 97,['Cybersecurity'],True
+98,Employee 98,"['Frontend Development', 'Backend Development', 'Machine Learning']",True
+99,Employee 99,"['Backend Development', 'DevOps', 'Machine Learning', 'Project Management']",False
+100,Employee 100,['DevOps'],True
+101,Employee 101,"['Machine Learning', 'Testing']",False
+102,Employee 102,"['Project Management', 'Database Management', 'Data Analysis', 'UI Design', 'Backend Development']",True
+103,Employee 103,['Testing'],False
+104,Employee 104,['DevOps'],True
+105,Employee 105,"['Project Management', 'Database Management', 'Cybersecurity', 'DevOps', 'UI Design']",True
+106,Employee 106,"['Data Analysis', 'DevOps']",False
+107,Employee 107,"['Testing', 'Project Management', 'Machine Learning', 'Cybersecurity', 'Backend Development']",False
+108,Employee 108,"['Project Management', 'Testing', 'Frontend Development', 'Cybersecurity', 'Machine Learning']",False
+109,Employee 109,"['Testing', 'UI Design', 'Project Management', 'Machine Learning', 'Database Management']",True
+110,Employee 110,"['Data Analysis', 'Machine Learning', 'Backend Development']",True
+111,Employee 111,"['Database Management', 'Machine Learning', 'UI Design', 'Testing']",True
+112,Employee 112,"['UI Design', 'Database Management', 'Machine Learning', 'Project Management']",False
+113,Employee 113,['Project Management'],False
+114,Employee 114,"['DevOps', 'Cybersecurity', 'Testing']",True
+115,Employee 115,['Cybersecurity'],True
+116,Employee 116,"['UI Design', 'Data Analysis']",False
+117,Employee 117,"['Database Management', 'Data Analysis', 'Machine Learning']",True
+118,Employee 118,"['Testing', 'Backend Development', 'Project Management', 'UI Design']",False
+119,Employee 119,"['Project Management', 'Database Management', 'Data Analysis', 'Frontend Development']",False
+120,Employee 120,['DevOps'],False
+121,Employee 121,"['Database Management', 'Frontend Development', 'DevOps', 'Data Analysis', 'Testing']",True
+122,Employee 122,"['Backend Development', 'Database Management', 'Testing', 'Frontend Development']",False
+123,Employee 123,"['Machine Learning', 'DevOps', 'Frontend Development', 'Testing', 'Data Analysis']",True
+124,Employee 124,"['DevOps', 'Data Analysis', 'Cybersecurity', 'Database Management', 'Backend Development']",True
+125,Employee 125,['DevOps'],True
+126,Employee 126,"['Data Analysis', 'Database Management', 'Machine Learning', 'Frontend Development']",True
+127,Employee 127,"['Backend Development', 'Frontend Development', 'Project Management', 'Cybersecurity']",True
+128,Employee 128,"['Machine Learning', 'Data Analysis', 'Testing', 'DevOps']",False
+129,Employee 129,['Frontend Development'],False
+130,Employee 130,"['Frontend Development', 'Machine Learning', 'Data Analysis', 'UI Design', 'Testing']",True
+131,Employee 131,"['Project Management', 'UI Design', 'Backend Development']",True
+132,Employee 132,"['UI Design', 'Backend Development', 'Project Management']",True
+133,Employee 133,"['Backend Development', 'Database Management', 'Data Analysis', 'Cybersecurity']",False
+134,Employee 134,['Data Analysis'],True
+135,Employee 135,"['Testing', 'Cybersecurity', 'DevOps', 'Frontend Development', 'UI Design']",False
+136,Employee 136,"['Project Management', 'UI Design']",True
+137,Employee 137,"['UI Design', 'Data Analysis', 'Machine Learning', 'Testing']",True
+138,Employee 138,"['Project Management', 'UI Design', 'Data Analysis', 'Machine Learning', 'Testing']",True
+139,Employee 139,"['Backend Development', 'Data Analysis', 'Machine Learning']",False
+140,Employee 140,"['Frontend Development', 'Database Management']",True
+141,Employee 141,"['Machine Learning', 'Frontend Development', 'Testing', 'Database Management', 'Project Management']",False
+142,Employee 142,"['Data Analysis', 'Project Management', 'Frontend Development', 'Cybersecurity', 'Machine Learning']",False
+143,Employee 143,"['Testing', 'Frontend Development', 'Database Management', 'Backend Development', 'Cybersecurity']",True
+144,Employee 144,"['UI Design', 'Cybersecurity', 'Database Management', 'Project Management']",False
+145,Employee 145,"['Testing', 'Data Analysis', 'Project Management', 'UI Design', 'Machine Learning']",False
+146,Employee 146,"['Backend Development', 'Cybersecurity', 'UI Design', 'Machine Learning']",True
+147,Employee 147,"['Project Management', 'Cybersecurity', 'Machine Learning', 'Data Analysis', 'Testing']",True
+148,Employee 148,"['Testing', 'DevOps', 'Project Management', 'Database Management', 'UI Design']",False
+149,Employee 149,['Backend Development'],True
+150,Employee 150,['Testing'],True
+151,Employee 151,['Frontend Development'],True
+152,Employee 152,"['UI Design', 'Cybersecurity', 'Project Management']",False
+153,Employee 153,"['Machine Learning', 'UI Design', 'Frontend Development', 'Backend Development', 'Data Analysis']",True
+154,Employee 154,['Data Analysis'],False
+155,Employee 155,"['Project Management', 'Machine Learning', 'Database Management', 'Backend Development']",False
+156,Employee 156,"['Frontend Development', 'Project Management', 'Database Management']",True
+157,Employee 157,"['Testing', 'Machine Learning', 'Project Management', 'Cybersecurity']",True
+158,Employee 158,"['Frontend Development', 'Backend Development', 'DevOps', 'Data Analysis', 'Cybersecurity']",False
+159,Employee 159,"['Database Management', 'DevOps', 'Data Analysis', 'Backend Development', 'Frontend Development']",False
+160,Employee 160,['DevOps'],False
+161,Employee 161,"['Project Management', 'UI Design', 'Frontend Development', 'Data Analysis', 'Machine Learning']",False
+162,Employee 162,"['Database Management', 'Frontend Development', 'Cybersecurity', 'Project Management']",False
+163,Employee 163,['Database Management'],True
+164,Employee 164,"['UI Design', 'Project Management', 'Backend Development']",False
+165,Employee 165,"['Testing', 'Backend Development']",False
+166,Employee 166,"['UI Design', 'Project Management', 'Database Management', 'Cybersecurity']",True
+167,Employee 167,['DevOps'],False
+168,Employee 168,"['Database Management', 'UI Design', 'Project Management', 'Testing']",True
+169,Employee 169,"['Frontend Development', 'Backend Development']",True
+170,Employee 170,"['Cybersecurity', 'Database Management', 'Data Analysis', 'UI Design']",True
+171,Employee 171,['Frontend Development'],False
+172,Employee 172,"['Testing', 'UI Design', 'Cybersecurity', 'DevOps', 'Data Analysis']",False
+173,Employee 173,"['Backend Development', 'Frontend Development']",True
+174,Employee 174,"['Database Management', 'Frontend Development', 'Cybersecurity', 'Project Management']",False
+175,Employee 175,"['Database Management', 'Backend Development', 'Machine Learning', 'DevOps']",True
+176,Employee 176,['Database Management'],True
+177,Employee 177,['Frontend Development'],False
+178,Employee 178,"['DevOps', 'Testing']",True
+179,Employee 179,"['Cybersecurity', 'UI Design', 'Testing', 'Data Analysis']",False
+180,Employee 180,"['Testing', 'Cybersecurity']",True
+181,Employee 181,"['UI Design', 'Testing', 'Frontend Development', 'Data Analysis', 'Project Management']",False
+182,Employee 182,"['DevOps', 'UI Design']",False
+183,Employee 183,['Testing'],False
+184,Employee 184,"['Database Management', 'Cybersecurity', 'Frontend Development', 'Backend Development']",False
+185,Employee 185,"['Machine Learning', 'Cybersecurity', 'Project Management', 'DevOps', 'Backend Development']",True
+186,Employee 186,"['Cybersecurity', 'Frontend Development', 'Project Management', 'Testing', 'Backend Development']",False
+187,Employee 187,"['Database Management', 'Testing', 'Frontend Development', 'Cybersecurity']",False
+188,Employee 188,"['Testing', 'Frontend Development', 'Cybersecurity', 'UI Design']",False
+189,Employee 189,['DevOps'],False
+190,Employee 190,['UI Design'],False
+191,Employee 191,"['Database Management', 'UI Design', 'Backend Development', 'Cybersecurity', 'Data Analysis']",True
+192,Employee 192,"['Testing', 'DevOps', 'Data Analysis']",True
+193,Employee 193,"['Testing', 'DevOps', 'Cybersecurity', 'Database Management', 'Backend Development']",True
+194,Employee 194,"['Testing', 'DevOps']",False
+195,Employee 195,"['UI Design', 'DevOps', 'Database Management', 'Cybersecurity', 'Machine Learning']",False
+196,Employee 196,['Project Management'],False
+197,Employee 197,"['Machine Learning', 'DevOps', 'Project Management']",False
+198,Employee 198,['Data Analysis'],False
+199,Employee 199,"['Data Analysis', 'Frontend Development', 'Testing', 'UI Design', 'Cybersecurity']",True
+200,Employee 200,"['Database Management', 'UI Design']",False
+201,Employee 201,"['Database Management', 'DevOps', 'Frontend Development', 'Testing']",False
+202,Employee 202,"['Testing', 'Cybersecurity', 'Machine Learning', 'Data Analysis']",False
+203,Employee 203,['Cybersecurity'],True
+204,Employee 204,"['Machine Learning', 'Testing']",False
+205,Employee 205,"['Cybersecurity', 'Machine Learning', 'DevOps', 'Project Management']",True
+206,Employee 206,"['Cybersecurity', 'Project Management', 'Data Analysis', 'Frontend Development', 'Testing']",True
+207,Employee 207,"['UI Design', 'Testing', 'DevOps']",False
+208,Employee 208,"['Machine Learning', 'DevOps']",False
+209,Employee 209,['Cybersecurity'],True
+210,Employee 210,"['UI Design', 'Machine Learning', 'DevOps']",False
+211,Employee 211,"['UI Design', 'DevOps']",False
+212,Employee 212,"['DevOps', 'Project Management']",False
+213,Employee 213,"['Data Analysis', 'DevOps', 'Project Management', 'Machine Learning']",False
+214,Employee 214,['Database Management'],False
+215,Employee 215,['Frontend Development'],True
+216,Employee 216,['Testing'],True
+217,Employee 217,"['Machine Learning', 'Testing']",False
+218,Employee 218,"['DevOps', 'Cybersecurity', 'UI Design']",False
+219,Employee 219,"['UI Design', 'Backend Development', 'Database Management']",False
+220,Employee 220,['Data Analysis'],False
+221,Employee 221,"['Data Analysis', 'DevOps', 'Project Management', 'Cybersecurity', 'Frontend Development']",False
+222,Employee 222,"['Backend Development', 'Machine Learning', 'DevOps']",True
+223,Employee 223,"['Project Management', 'UI Design', 'Data Analysis']",True
+224,Employee 224,"['Project Management', 'Cybersecurity', 'UI Design', 'Frontend Development', 'DevOps']",False
+225,Employee 225,"['Backend Development', 'Testing']",False
+226,Employee 226,"['Database Management', 'Cybersecurity', 'DevOps', 'Project Management', 'Data Analysis']",True
+227,Employee 227,"['UI Design', 'Frontend Development', 'Backend Development', 'Database Management', 'Testing']",False
+228,Employee 228,"['Database Management', 'Machine Learning', 'Frontend Development', 'Cybersecurity']",False
+229,Employee 229,"['Frontend Development', 'Data Analysis']",False
+230,Employee 230,"['Database Management', 'Frontend Development', 'Testing']",False
+231,Employee 231,"['Testing', 'Frontend Development', 'UI Design', 'Cybersecurity']",False
+232,Employee 232,"['Machine Learning', 'Data Analysis']",False
+233,Employee 233,"['UI Design', 'Cybersecurity', 'Frontend Development']",True
+234,Employee 234,"['Project Management', 'Backend Development', 'Machine Learning']",True
+235,Employee 235,['UI Design'],True
+236,Employee 236,['Testing'],False
+237,Employee 237,"['Frontend Development', 'Data Analysis', 'Testing', 'Project Management', 'DevOps']",False
+238,Employee 238,"['Database Management', 'DevOps', 'Frontend Development', 'UI Design', 'Machine Learning']",True
+239,Employee 239,"['Backend Development', 'Machine Learning', 'Frontend Development', 'Database Management', 'Data Analysis']",True
+240,Employee 240,"['Data Analysis', 'Project Management', 'Backend Development', 'Cybersecurity']",True
+241,Employee 241,['Project Management'],False
+242,Employee 242,"['Backend Development', 'Frontend Development', 'DevOps', 'Testing']",True
+243,Employee 243,"['UI Design', 'Frontend Development', 'Testing', 'Data Analysis']",True
+244,Employee 244,"['Database Management', 'Frontend Development', 'UI Design', 'Backend Development']",False
+245,Employee 245,['Backend Development'],False
+246,Employee 246,"['Frontend Development', 'DevOps', 'Cybersecurity', 'Project Management']",False
+247,Employee 247,"['Data Analysis', 'Backend Development', 'Cybersecurity']",True
+248,Employee 248,"['Project Management', 'Database Management', 'Testing']",False
+249,Employee 249,"['Testing', 'Backend Development', 'Machine Learning', 'Project Management', 'Frontend Development']",True
+250,Employee 250,"['Cybersecurity', 'Testing']",True
+251,Employee 251,"['Frontend Development', 'Database Management', 'Data Analysis']",False
+252,Employee 252,"['Project Management', 'DevOps', 'Database Management', 'Frontend Development']",True
+253,Employee 253,"['Machine Learning', 'Data Analysis', 'Project Management', 'Database Management', 'Backend Development']",False
+254,Employee 254,"['UI Design', 'Database Management', 'Frontend Development']",True
+255,Employee 255,"['Machine Learning', 'DevOps', 'Frontend Development']",False
+256,Employee 256,"['Backend Development', 'UI Design', 'Machine Learning', 'DevOps']",True
+257,Employee 257,['Frontend Development'],True
+258,Employee 258,"['UI Design', 'Frontend Development', 'Data Analysis', 'Cybersecurity', 'Testing']",True
+259,Employee 259,"['Cybersecurity', 'UI Design', 'Backend Development', 'Database Management', 'Testing']",False
+260,Employee 260,['Data Analysis'],True
+261,Employee 261,"['Backend Development', 'Frontend Development', 'Database Management']",True
+262,Employee 262,"['Database Management', 'Cybersecurity']",True
+263,Employee 263,"['UI Design', 'Database Management', 'Cybersecurity', 'Backend Development', 'Data Analysis']",True
+264,Employee 264,['Database Management'],True
+265,Employee 265,"['Backend Development', 'Data Analysis', 'Testing', 'UI Design', 'DevOps']",False
+266,Employee 266,"['DevOps', 'Testing', 'UI Design', 'Project Management', 'Data Analysis']",False
+267,Employee 267,"['Data Analysis', 'Frontend Development']",True
+268,Employee 268,"['UI Design', 'Project Management']",True
+269,Employee 269,"['Frontend Development', 'Cybersecurity', 'Data Analysis']",True
+270,Employee 270,['UI Design'],True
+271,Employee 271,"['Project Management', 'DevOps', 'Data Analysis', 'Database Management']",True
+272,Employee 272,['UI Design'],False
+273,Employee 273,"['Project Management', 'DevOps', 'Machine Learning']",False
+274,Employee 274,"['Frontend Development', 'Database Management', 'Backend Development', 'Data Analysis', 'Machine Learning']",False
+275,Employee 275,['Testing'],True
+276,Employee 276,['Cybersecurity'],False
+277,Employee 277,"['Testing', 'Frontend Development']",False
+278,Employee 278,"['Machine Learning', 'Data Analysis']",False
+279,Employee 279,"['UI Design', 'Cybersecurity', 'Testing', 'Data Analysis', 'DevOps']",False
+280,Employee 280,"['Database Management', 'DevOps']",True
+281,Employee 281,['DevOps'],True
+282,Employee 282,"['UI Design', 'DevOps', 'Data Analysis']",False
+283,Employee 283,"['Database Management', 'UI Design']",False
+284,Employee 284,"['Database Management', 'Backend Development', 'DevOps', 'Project Management', 'Machine Learning']",True
+285,Employee 285,['Testing'],False
+286,Employee 286,['Database Management'],False
+287,Employee 287,"['Backend Development', 'UI Design', 'Machine Learning']",True
+288,Employee 288,"['UI Design', 'Project Management', 'Machine Learning', 'Frontend Development', 'Database Management']",False
+289,Employee 289,"['Cybersecurity', 'Project Management', 'Frontend Development']",True
+290,Employee 290,['Project Management'],True
+291,Employee 291,"['Backend Development', 'Machine Learning', 'Database Management', 'Data Analysis']",False
+292,Employee 292,"['Cybersecurity', 'DevOps', 'Database Management', 'Frontend Development', 'Backend Development']",True
+293,Employee 293,"['Testing', 'Machine Learning', 'Backend Development', 'UI Design']",False
+294,Employee 294,"['Project Management', 'Cybersecurity']",False
+295,Employee 295,"['Machine Learning', 'Cybersecurity']",True
+296,Employee 296,"['UI Design', 'Data Analysis', 'Testing']",True
+297,Employee 297,['Database Management'],False
+298,Employee 298,['Database Management'],False
+299,Employee 299,"['Frontend Development', 'Database Management', 'DevOps']",False
+300,Employee 300,"['Project Management', 'Database Management', 'Testing', 'Cybersecurity', 'DevOps']",False
+301,Employee 301,"['Machine Learning', 'UI Design', 'Backend Development', 'DevOps']",False
+302,Employee 302,"['DevOps', 'Database Management', 'Cybersecurity', 'Backend Development', 'UI Design']",False
+303,Employee 303,"['Backend Development', 'DevOps']",False
+304,Employee 304,"['Frontend Development', 'Backend Development', 'Data Analysis', 'Cybersecurity']",True
+305,Employee 305,"['Database Management', 'Machine Learning']",False
+306,Employee 306,['DevOps'],False
+307,Employee 307,"['Data Analysis', 'Database Management']",False
+308,Employee 308,['Project Management'],True
+309,Employee 309,"['Cybersecurity', 'Project Management', 'Testing', 'UI Design']",True
+310,Employee 310,"['Database Management', 'Project Management', 'Cybersecurity']",False
+311,Employee 311,"['Project Management', 'Testing', 'Database Management', 'DevOps', 'Backend Development']",False
+312,Employee 312,"['Data Analysis', 'Project Management', 'Frontend Development']",False
+313,Employee 313,"['Data Analysis', 'Machine Learning', 'Frontend Development', 'Database Management', 'Testing']",False
+314,Employee 314,"['Database Management', 'Project Management', 'Frontend Development', 'UI Design', 'Backend Development']",True
+315,Employee 315,['DevOps'],True
+316,Employee 316,"['Machine Learning', 'Testing', 'Project Management', 'Database Management', 'DevOps']",False
+317,Employee 317,['Data Analysis'],False
+318,Employee 318,['Project Management'],False
+319,Employee 319,"['Backend Development', 'Cybersecurity', 'UI Design', 'Machine Learning']",False
+320,Employee 320,"['Testing', 'Frontend Development']",False
+321,Employee 321,"['DevOps', 'Data Analysis']",True
+322,Employee 322,"['Data Analysis', 'Cybersecurity', 'Project Management', 'DevOps']",True
+323,Employee 323,"['Project Management', 'Data Analysis', 'Cybersecurity']",False
+324,Employee 324,"['Frontend Development', 'Backend Development', 'Project Management', 'Cybersecurity']",True
+325,Employee 325,['Project Management'],False
+326,Employee 326,"['UI Design', 'Cybersecurity', 'Frontend Development']",False
+327,Employee 327,"['Backend Development', 'Cybersecurity']",False
+328,Employee 328,"['Frontend Development', 'UI Design', 'Database Management', 'Machine Learning', 'Cybersecurity']",True
+329,Employee 329,"['Database Management', 'DevOps', 'Frontend Development', 'Machine Learning']",False
+330,Employee 330,"['Testing', 'Frontend Development', 'Data Analysis']",True
+331,Employee 331,"['UI Design', 'Project Management', 'Testing']",True
+332,Employee 332,['Data Analysis'],True
+333,Employee 333,"['Data Analysis', 'Machine Learning']",False
+334,Employee 334,"['Frontend Development', 'Cybersecurity', 'Testing', 'Backend Development', 'Machine Learning']",True
+335,Employee 335,"['Project Management', 'Database Management', 'Machine Learning', 'Data Analysis', 'UI Design']",True
+336,Employee 336,"['Frontend Development', 'DevOps']",True
+337,Employee 337,['Database Management'],False
+338,Employee 338,"['Backend Development', 'Cybersecurity', 'DevOps']",True
+339,Employee 339,"['Cybersecurity', 'Testing', 'Database Management', 'Frontend Development']",False
+340,Employee 340,"['Project Management', 'Backend Development', 'Testing']",True
+341,Employee 341,"['Frontend Development', 'Data Analysis', 'Backend Development']",False
+342,Employee 342,"['Cybersecurity', 'Data Analysis', 'Frontend Development']",True
+343,Employee 343,['UI Design'],True
+344,Employee 344,"['Cybersecurity', 'Frontend Development', 'DevOps', 'Testing']",True
+345,Employee 345,"['Data Analysis', 'Frontend Development', 'Testing', 'UI Design']",False
+346,Employee 346,['Testing'],True
+347,Employee 347,"['Frontend Development', 'Project Management', 'Backend Development']",True
+348,Employee 348,"['Frontend Development', 'Backend Development', 'DevOps', 'Cybersecurity']",True
+349,Employee 349,"['Data Analysis', 'Machine Learning', 'UI Design', 'Backend Development', 'Frontend Development']",False
+350,Employee 350,"['Data Analysis', 'Database Management', 'Machine Learning']",True
+351,Employee 351,"['Frontend Development', 'Cybersecurity']",False
+352,Employee 352,['Project Management'],False
+353,Employee 353,['Project Management'],False
+354,Employee 354,"['Frontend Development', 'Cybersecurity', 'DevOps', 'Backend Development', 'Data Analysis']",False
+355,Employee 355,"['UI Design', 'Testing', 'Project Management']",False
+356,Employee 356,"['Frontend Development', 'Testing', 'Backend Development']",False
+357,Employee 357,"['DevOps', 'UI Design']",False
+358,Employee 358,"['UI Design', 'Cybersecurity']",True
+359,Employee 359,"['Data Analysis', 'Database Management', 'Machine Learning', 'Frontend Development']",False
+360,Employee 360,['DevOps'],False
+361,Employee 361,"['Database Management', 'Testing', 'UI Design']",True
+362,Employee 362,['DevOps'],False
+363,Employee 363,"['Backend Development', 'Cybersecurity', 'Database Management', 'Data Analysis', 'Project Management']",True
+364,Employee 364,"['Data Analysis', 'Frontend Development']",True
+365,Employee 365,"['Database Management', 'Frontend Development', 'Testing', 'Cybersecurity', 'DevOps']",True
+366,Employee 366,"['Data Analysis', 'DevOps', 'Machine Learning', 'Backend Development']",False
+367,Employee 367,"['Cybersecurity', 'Testing', 'Data Analysis']",False
+368,Employee 368,"['Frontend Development', 'DevOps', 'Data Analysis', 'Machine Learning']",False
+369,Employee 369,['UI Design'],False
+370,Employee 370,['Database Management'],True
+371,Employee 371,['UI Design'],False
+372,Employee 372,"['Frontend Development', 'UI Design', 'Cybersecurity', 'Backend Development', 'Project Management']",True
+373,Employee 373,"['Backend Development', 'Project Management', 'Data Analysis']",True
+374,Employee 374,"['UI Design', 'Cybersecurity', 'DevOps']",False
+375,Employee 375,['DevOps'],True
+376,Employee 376,"['Cybersecurity', 'Machine Learning', 'Testing']",False
+377,Employee 377,"['Database Management', 'UI Design']",True
+378,Employee 378,['Backend Development'],False
+379,Employee 379,"['Machine Learning', 'DevOps', 'Cybersecurity', 'Project Management', 'UI Design']",True
+380,Employee 380,"['Frontend Development', 'Cybersecurity', 'UI Design', 'Data Analysis', 'Project Management']",True
+381,Employee 381,"['DevOps', 'Testing', 'Cybersecurity', 'UI Design', 'Machine Learning']",False
+382,Employee 382,['Database Management'],False
+383,Employee 383,"['Testing', 'Machine Learning', 'Data Analysis', 'Frontend Development']",False
+384,Employee 384,['Machine Learning'],True
+385,Employee 385,"['Backend Development', 'Cybersecurity']",False
+386,Employee 386,"['Database Management', 'Backend Development', 'UI Design', 'DevOps']",False
+387,Employee 387,"['Project Management', 'DevOps', 'Cybersecurity']",False
+388,Employee 388,"['Frontend Development', 'Machine Learning', 'Project Management', 'Data Analysis', 'UI Design']",True
+389,Employee 389,"['Frontend Development', 'Database Management', 'DevOps', 'Data Analysis']",False
+390,Employee 390,"['Data Analysis', 'Testing']",True
+391,Employee 391,['Data Analysis'],True
+392,Employee 392,['Project Management'],False
+393,Employee 393,"['Backend Development', 'Testing', 'Cybersecurity', 'DevOps']",False
+394,Employee 394,"['Database Management', 'Machine Learning']",True
+395,Employee 395,"['Cybersecurity', 'Data Analysis']",True
+396,Employee 396,"['Frontend Development', 'Machine Learning']",False
+397,Employee 397,"['DevOps', 'UI Design', 'Machine Learning', 'Frontend Development']",False
+398,Employee 398,"['Machine Learning', 'DevOps', 'Project Management', 'UI Design', 'Frontend Development']",True
+399,Employee 399,"['Machine Learning', 'Database Management', 'Data Analysis']",True
+400,Employee 400,['Data Analysis'],False
+401,Employee 401,"['Frontend Development', 'UI Design', 'Database Management', 'Machine Learning']",False
+402,Employee 402,"['Frontend Development', 'Data Analysis', 'DevOps', 'Machine Learning']",True
+403,Employee 403,"['Cybersecurity', 'Database Management', 'UI Design', 'Project Management']",False
+404,Employee 404,"['DevOps', 'Data Analysis', 'Machine Learning', 'Database Management', 'Cybersecurity']",True
+405,Employee 405,"['Machine Learning', 'Frontend Development', 'DevOps', 'Data Analysis', 'Cybersecurity']",False
+406,Employee 406,"['Machine Learning', 'Database Management', 'Frontend Development', 'Data Analysis']",True
+407,Employee 407,"['Project Management', 'Cybersecurity', 'Database Management', 'Testing']",False
+408,Employee 408,"['Testing', 'Frontend Development', 'UI Design', 'Cybersecurity']",False
+409,Employee 409,"['Machine Learning', 'Backend Development', 'Testing', 'Frontend Development']",False
+410,Employee 410,"['UI Design', 'Project Management', 'Cybersecurity', 'Machine Learning', 'Frontend Development']",True
+411,Employee 411,"['Frontend Development', 'Cybersecurity', 'Database Management']",False
+412,Employee 412,['Backend Development'],True
+413,Employee 413,['Data Analysis'],False
+414,Employee 414,"['Machine Learning', 'Database Management', 'UI Design', 'Cybersecurity', 'Frontend Development']",False
+415,Employee 415,"['Testing', 'UI Design', 'Backend Development', 'Frontend Development']",True
+416,Employee 416,['Cybersecurity'],True
+417,Employee 417,"['UI Design', 'Testing', 'Backend Development']",True
+418,Employee 418,"['Backend Development', 'Data Analysis', 'Frontend Development', 'Testing', 'Machine Learning']",True
+419,Employee 419,"['Testing', 'DevOps', 'Frontend Development', 'Backend Development', 'Database Management']",False
+420,Employee 420,"['Data Analysis', 'Testing', 'Project Management', 'Backend Development', 'Frontend Development']",False
+421,Employee 421,"['Testing', 'Backend Development', 'Frontend Development', 'Machine Learning']",False
+422,Employee 422,"['Frontend Development', 'Project Management']",False
+423,Employee 423,"['Cybersecurity', 'UI Design', 'DevOps']",False
+424,Employee 424,"['UI Design', 'Project Management']",False
+425,Employee 425,"['Database Management', 'Data Analysis', 'DevOps', 'Testing']",True
+426,Employee 426,"['Machine Learning', 'Data Analysis', 'UI Design', 'Project Management']",False
+427,Employee 427,"['UI Design', 'Backend Development', 'DevOps', 'Machine Learning']",False
+428,Employee 428,"['Testing', 'UI Design', 'Frontend Development', 'DevOps']",False
+429,Employee 429,['Project Management'],True
+430,Employee 430,['Testing'],False
+431,Employee 431,['Cybersecurity'],True
+432,Employee 432,"['DevOps', 'Cybersecurity', 'Database Management', 'Backend Development', 'Frontend Development']",True
+433,Employee 433,"['UI Design', 'Machine Learning', 'Cybersecurity', 'DevOps']",False
+434,Employee 434,"['DevOps', 'Testing', 'UI Design', 'Frontend Development']",False
+435,Employee 435,['Machine Learning'],True
+436,Employee 436,"['Cybersecurity', 'UI Design', 'Database Management', 'Machine Learning']",False
+437,Employee 437,"['Testing', 'UI Design', 'Machine Learning', 'Data Analysis', 'Project Management']",False
+438,Employee 438,"['Cybersecurity', 'Backend Development', 'DevOps', 'Database Management', 'Frontend Development']",True
+439,Employee 439,"['Data Analysis', 'Machine Learning']",False
+440,Employee 440,"['Machine Learning', 'Database Management', 'UI Design', 'Cybersecurity', 'Data Analysis']",False
+441,Employee 441,['UI Design'],True
+442,Employee 442,"['DevOps', 'UI Design', 'Database Management', 'Frontend Development', 'Backend Development']",False
+443,Employee 443,"['Project Management', 'Backend Development', 'Testing', 'Machine Learning', 'Database Management']",True
+444,Employee 444,"['Database Management', 'Testing']",False
+445,Employee 445,"['Machine Learning', 'Project Management', 'Data Analysis', 'Database Management', 'Frontend Development']",False
+446,Employee 446,"['Data Analysis', 'Machine Learning', 'Cybersecurity', 'Backend Development', 'Database Management']",True
+447,Employee 447,['DevOps'],True
+448,Employee 448,"['Database Management', 'UI Design', 'DevOps']",True
+449,Employee 449,"['Frontend Development', 'Data Analysis', 'Database Management', 'UI Design', 'Project Management']",False
+450,Employee 450,['Testing'],True
+451,Employee 451,['Data Analysis'],False
+452,Employee 452,"['Cybersecurity', 'Testing']",True
+453,Employee 453,"['Data Analysis', 'Testing', 'Project Management']",True
+454,Employee 454,"['Testing', 'Cybersecurity', 'UI Design']",False
+455,Employee 455,"['UI Design', 'Project Management', 'Machine Learning', 'Database Management', 'Backend Development']",True
+456,Employee 456,"['Project Management', 'Machine Learning', 'Database Management']",False
+457,Employee 457,"['Data Analysis', 'Backend Development', 'Testing', 'Database Management', 'Frontend Development']",True
+458,Employee 458,"['Project Management', 'Backend Development', 'Machine Learning', 'Database Management', 'Testing']",False
+459,Employee 459,"['Testing', 'Cybersecurity', 'Backend Development']",False
+460,Employee 460,['Project Management'],True
+461,Employee 461,"['Testing', 'UI Design', 'Project Management']",False
+462,Employee 462,"['Frontend Development', 'Backend Development', 'Cybersecurity', 'Testing']",False
+463,Employee 463,"['Project Management', 'Database Management', 'Testing', 'Backend Development']",True
+464,Employee 464,['UI Design'],True
+465,Employee 465,"['UI Design', 'Machine Learning', 'Project Management', 'Backend Development', 'Cybersecurity']",False
+466,Employee 466,"['Backend Development', 'Data Analysis', 'Machine Learning', 'DevOps', 'Cybersecurity']",False
+467,Employee 467,"['Database Management', 'Data Analysis', 'DevOps', 'Backend Development']",True
+468,Employee 468,"['DevOps', 'Database Management', 'UI Design', 'Project Management']",False
+469,Employee 469,"['Project Management', 'Cybersecurity', 'DevOps', 'Testing', 'Data Analysis']",True
+470,Employee 470,"['Backend Development', 'Project Management']",False
+471,Employee 471,"['Machine Learning', 'Database Management', 'Data Analysis', 'Backend Development']",False
+472,Employee 472,"['Data Analysis', 'Cybersecurity', 'Project Management']",True
+473,Employee 473,['UI Design'],True
+474,Employee 474,"['DevOps', 'Cybersecurity', 'Machine Learning']",False
+475,Employee 475,"['Database Management', 'Backend Development']",False
+476,Employee 476,"['Cybersecurity', 'DevOps', 'Backend Development']",False
+477,Employee 477,"['Data Analysis', 'Testing', 'Machine Learning']",False
+478,Employee 478,"['DevOps', 'Machine Learning', 'UI Design', 'Backend Development']",True
+479,Employee 479,"['Data Analysis', 'Machine Learning', 'DevOps', 'Project Management']",False
+480,Employee 480,"['Machine Learning', 'Frontend Development', 'Database Management']",True
+481,Employee 481,"['Project Management', 'Testing']",False
+482,Employee 482,"['UI Design', 'DevOps', 'Testing']",True
+483,Employee 483,"['Backend Development', 'DevOps', 'UI Design']",True
+484,Employee 484,"['Database Management', 'Data Analysis']",False
+485,Employee 485,['Frontend Development'],True
+486,Employee 486,"['Testing', 'Frontend Development', 'Database Management', 'Cybersecurity']",False
+487,Employee 487,"['Data Analysis', 'Backend Development', 'DevOps', 'UI Design']",True
+488,Employee 488,"['Database Management', 'UI Design', 'Data Analysis', 'DevOps']",True
+489,Employee 489,['Backend Development'],True
+490,Employee 490,"['UI Design', 'Backend Development']",True
+491,Employee 491,"['DevOps', 'Frontend Development', 'Data Analysis', 'Testing', 'Database Management']",False
+492,Employee 492,"['Project Management', 'Machine Learning', 'Database Management']",True
+493,Employee 493,"['Data Analysis', 'Machine Learning']",False
+494,Employee 494,"['Frontend Development', 'DevOps', 'UI Design', 'Backend Development']",True
+495,Employee 495,"['Cybersecurity', 'Testing']",True
+496,Employee 496,"['Project Management', 'UI Design', 'Data Analysis', 'Testing']",False
+497,Employee 497,['Backend Development'],False
+498,Employee 498,['Machine Learning'],False
+499,Employee 499,"['Cybersecurity', 'UI Design']",False
+500,Employee 500,"['Frontend Development', 'Data Analysis']",True
