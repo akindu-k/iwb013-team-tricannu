@@ -168,7 +168,6 @@
 # # if __name__ == "__main__":
 # #     main()
 
-
 import os
 import requests
 from employee_data import employees  # Assuming employees data is imported from this module
@@ -196,7 +195,13 @@ def assign_tasks_to_employees(tasks):
     assigned_tasks = []
     for task in tasks:
         task_description = task["name"]
-        prompt = f"Assign this task to an employee based on their skills and availability: {task_description}. Employees: {employees}"
+
+        # Refine the prompt to make the instructions clearer
+        prompt = (
+            f"Please assign this task to the most suitable employee from the list based on their skills and availability: "
+            f"'{task_description}'. The employees available are: {employees}. Make sure the assigned employee's name "
+            f"is clearly stated at the end of the response."
+        )
         
         # Use Hugging Face API (replace with your Hugging Face API key)
         response = requests.post(
@@ -208,11 +213,23 @@ def assign_tasks_to_employees(tasks):
         # Handle the response
         if response.status_code == 200:
             result = response.json()
+            
+            # Debugging: print the raw response from the model to see what is being returned
+            print("Model response:", result)
+
             if isinstance(result, list) and result:
-                assigned_text = result[0]['generated_text']
-                assigned_employee = assigned_text.split(":")[-1].strip().split('.')[0]  # Extract name from the response
+                assigned_text = result[0].get('generated_text', '')
+
+                # Extract the employee name (add checks to avoid parsing errors)
+                if assigned_text:
+                    if "Assigned to:" in assigned_text:
+                        assigned_employee = assigned_text.split("Assigned to:")[-1].strip().split('.')[0]
+                    else:
+                        assigned_employee = "Assignment not found."
+                else:
+                    assigned_employee = "No assignment generated."
             else:
-                assigned_employee = "No assignment generated."
+                assigned_employee = "Invalid model response."
         else:
             assigned_employee = f"Error: {response.status_code} - {response.text}"
         
