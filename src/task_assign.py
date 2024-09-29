@@ -151,7 +151,7 @@ import os
 import requests
 import pickle
 import sys
-from src.employee_data import employees  # Assuming employees data is imported from this module
+from employee_data import employees  # Assuming employees data is imported from this module
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -195,7 +195,7 @@ def fetch_tasks_from_trello(list_id):
 
 # Load the trained model and vectorizer
 def load_trained_model():
-    with open('task_assignment_model_large.pkl', 'rb') as f:
+    with open('./src/task_assignment_model_large.pkl', 'rb') as f:
         vectorizer, model = pickle.load(f)
     return vectorizer, model
 
