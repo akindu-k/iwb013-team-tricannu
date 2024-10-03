@@ -1,0 +1,7 @@
+<solver>
+    <solutionClass>com.yourpackage.TaskAssignmentSolution</solutionClass>
+    <entityClass>com.yourpackage.TaskAssignment</entityClass>
+    <scoreDirectorFactory>
+        <constraintProviderClass>com.yourpackage.TaskAssignmentConstraintProvider</constraintProviderClass>
+    </scoreDirectorFactory>
+</solver>
