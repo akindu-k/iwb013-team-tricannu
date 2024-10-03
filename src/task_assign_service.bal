@@ -16,23 +16,26 @@ public function main() returns error? {
     }
 
     // Fetch the tasks from Trello
-    json tasks = check fetchTrelloTasks(boardId);
-    io:println("Trello Tasks: ", tasks);
+    json tasksJson = check fetchTrelloTasks(boardId);
+    json[] tasks = <json[]>tasksJson;
+
+    //map<json> firstTask = <map<json>>tasks[0];
+    //io:println("Trello Tasks: ", <string>firstTask["name"]);
 
     // Cast the tasks to a JSON array before iterating
     json[] taskArray = <json[]>tasks;
 
     // For each task, call the ML model and assign employees
-    foreach var task in taskArray {
-        json taskData = {
-            "task_complexity": 2,
-            "employee_skill": 3,
-            "task_urgency": 2
-        };
+    foreach var _task in taskArray {
+        // json taskData = {
+        //     "task_complexity": 2,
+        //     "employee_skill": 3,
+        //     "task_urgency": 2
+        // };
 
         // Call the Flask API to assign the task
-        json assignedTask = check getEmployeeAssignment(taskData);
-        io:println("Assigned Task: ", assignedTask);
+        json assignedTask = check writeToTextFile(_task);
+        //io:println("Assigned Task: ", assignedTask);
     }
 }
 
@@ -51,10 +54,15 @@ function fetchTrelloTasks(string boardId) returns json|error {
 }
 
 // Function to call the Flask ML model API to get task assignment
-function getEmployeeAssignment(json task) returns json|error {
-    http:Client mlClient = check new ("http://localhost:5000");
+function writeToTextFile(json task) returns json|error {
+    string filePath = "./assigned_tasks.txt";
+    io:WritableByteChannel file = check io:openWritableFile(filePath, io:APPEND);
 
-    http:Response response = check mlClient->post("/predict", task);
-    json result = check response.getJsonPayload();
-    return result;
+    string taskDetails = task.toString() + "\n"; // Add a newline for better readability
+    byte[] taskDetailsBytes = taskDetails.toBytes();
+    var writeResult = check file.write(taskDetailsBytes, 0);
+
+    check file.close();
+    return task;
 }
+
