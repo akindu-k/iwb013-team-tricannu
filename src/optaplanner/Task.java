@@ -1,3 +1,5 @@
+package optaplanner;
+
 public class Task {
 
     private String name;

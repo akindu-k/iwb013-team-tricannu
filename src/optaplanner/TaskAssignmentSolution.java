@@ -1,3 +1,6 @@
+package optaplanner;
+
+
 import org.optaplanner.core.api.domain.solution.PlanningSolution;
 import org.optaplanner.core.api.domain.solution.PlanningEntityProperty;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;

@@ -1,3 +1,5 @@
+package optaplanner;
+
 public class Employee {
 
     private String name;
