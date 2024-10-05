@@ -1,7 +1,12 @@
 <solver>
-    <solutionClass>com.yourpackage.TaskAssignmentSolution</solutionClass>
-    <entityClass>com.yourpackage.TaskAssignment</entityClass>
+    <solutionClass>com.example.TaskAssignmentSolution</solutionClass>
+    <entityClass>com.example.TaskAssignment</entityClass>
+    
     <scoreDirectorFactory>
-        <constraintProviderClass>com.yourpackage.TaskAssignmentConstraintProvider</constraintProviderClass>
+        <constraintProviderClass>com.example.TaskAssignmentConstraintProvider</constraintProviderClass>
     </scoreDirectorFactory>
+    
+    <termination>
+        <secondsSpentLimit>60</secondsSpentLimit>
+    </termination>
 </solver>
