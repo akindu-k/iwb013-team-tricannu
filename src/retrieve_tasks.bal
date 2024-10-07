@@ -41,7 +41,7 @@ function fetchTrelloTasks(string boardId) returns json|error {
     }
 }
 
-// Function to write the task name to the text file
+//Function to write the task name to the text file
 function writeTaskNameToFile(json task) returns error? {
     string filePath = "./assigned_tasks.txt";
     io:WritableByteChannel file = check io:openWritableFile(filePath, io:APPEND);
