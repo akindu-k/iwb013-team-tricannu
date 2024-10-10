@@ -1,0 +1,95 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a2e; /* Dark blue background for consistency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for the Login Form */
+.login-container {
+  background-color: #6161ce; /* Keep the form background white */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Heading for Login */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color for contrast */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styles */
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input Styles */
+input[type="text"], input[type="password"], select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Input Focus Styles */
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+  border-color: #ff9671; /* Highlight color for focus */
+}
+
+/* Button Styles */
+button {
+  padding: 12px;
+  background-color: #ff9671; /* Vibrant orange background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover Styles */
+button:hover {
+  background-color: #ffc75f; /* Yellow on hover */
+  transform: scale(1.05); /* Slight scale effect */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+/* Responsive for Smaller Screens */
+@media (max-width: 480px) {
+  .login-container {
+      padding: 30px;
+  }
+
+  button {
+      padding: 10px;
+      font-size: 14px;
+  }
+}

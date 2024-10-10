@@ -1,42 +1,151 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* General Styles */
+
+
+h2 {
+  color: #ffffff; /* Update heading color to white */
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center the nav links */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Login Form Styles */
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  color: black; /* Black text inside form */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+input[type="text"], input[type="password"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff9671; /* Update button to vibrant orange */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffc75f; /* Yellow on hover */
+  transform: scale(1.05); /* Hover effect */
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard Styles */
+.dashboard {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard h2 {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.dashboard-content {
+  margin-top: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Colorful Buttons for Dashboard */
+.dashboard .role-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dashboard .role-buttons .btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard .role-buttons .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-employee {
+  background-color: #ff6f91; /* Light Pink for Employee */
+}
+
+.btn-manager {
+  background-color: #ff9671; /* Orange for Manager */
+}
+
+.btn-admin {
+  background-color: #ffc75f; /* Yellow for Admin */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .dashboard .role-buttons {
+    flex-direction: column;
+    gap: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  button {
+    font-size: 1rem;
+    padding: 12px 20px;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

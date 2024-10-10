@@ -23,3 +23,4 @@ with open("assigned_tasks.txt", "r") as f:
     prompt = "This is an employee set and tasklist. Assign the each task to the most suitable employee.\n" + employees + "\nTask: " + taskList
     response = model.generate_content(prompt)
     print(response.text)
+    
