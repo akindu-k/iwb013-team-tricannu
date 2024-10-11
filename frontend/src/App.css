@@ -1,71 +1,82 @@
 /* General Styles */
-
-
-h2 {
-  color: #ffffff; /* Update heading color to white */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2f2f2f; /* Dark background to match the theme */
+  color: #ffffff; /* White text by default */
+  margin: 0;
+  padding: 0;
 }
 
-/* Navigation Bar Styles */
+/* Heading Styles */
+h1, h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Navigation Bar */
 nav {
   background-color: #333;
-  padding: 10px;
+  padding: 15px;
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center; /* Center the nav links */
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 nav ul li a:hover {
   background-color: #555;
+  transform: scale(1.05);
 }
 
-/* Login Form Styles */
+/* Form Styles */
 form {
   max-width: 400px;
   margin: 50px auto;
-  padding: 20px;
-  background-color: white;
-  color: black; /* Black text inside form */
+  padding: 30px;
+  background-color: #444;
+  color: white;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 label {
   display: block;
-  margin-bottom: 10px;
-  color: #555;
+  margin-bottom: 8px;
+  color: #ddd;
 }
 
 input[type="text"], input[type="password"], select {
   width: 100%;
-  padding: 10px;
-  margin: 5px 0 20px 0;
-  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #777;
   border-radius: 5px;
   box-sizing: border-box;
+  background-color: #333;
+  color: #fff;
 }
 
 button {
   width: 100%;
-  padding: 10px;
-  background-color: #ff9671; /* Update button to vibrant orange */
+  padding: 12px;
+  background-color: #ff9671;
   color: white;
   border: none;
   border-radius: 5px;
@@ -74,8 +85,8 @@ button {
 }
 
 button:hover {
-  background-color: #ffc75f; /* Yellow on hover */
-  transform: scale(1.05); /* Hover effect */
+  background-color: #ffc75f;
+  transform: scale(1.05);
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
 }
 
@@ -83,58 +94,59 @@ button:hover {
 .dashboard {
   max-width: 800px;
   margin: 50px auto;
-  background-color: #ffffff;
-  color: black;
-  padding: 20px;
+  background-color: #444;
+  color: white;
+  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
 .dashboard h2 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .dashboard-content {
   margin-top: 20px;
 }
 
-/* Colorful Buttons for Dashboard */
-.dashboard .role-buttons {
+/* Colorful Buttons for Roles */
+.role-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.dashboard .role-buttons .btn {
+.role-buttons .btn {
   padding: 15px 30px;
   font-size: 1.2rem;
   color: white;
   text-decoration: none;
   border-radius: 30px;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.dashboard .role-buttons .btn:hover {
+.role-buttons .btn:hover {
   transform: scale(1.1);
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .btn-employee {
-  background-color: #ff6f91; /* Light Pink for Employee */
+  background-color: #ff6f91;
 }
 
 .btn-manager {
-  background-color: #ff9671; /* Orange for Manager */
+  background-color: #ff9671;
 }
 
 .btn-admin {
-  background-color: #ffc75f; /* Yellow for Admin */
+  background-color: #ffc75f;
 }
 
-/* Responsive Design for Small Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .dashboard .role-buttons {
+  .role-buttons {
     flex-direction: column;
     gap: 15px;
   }

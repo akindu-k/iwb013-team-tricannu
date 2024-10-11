@@ -1,64 +1,69 @@
+/* Adjusted container for dark background theme */
 .employee-dashboard-container {
     max-width: 1000px;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
+    padding: 30px;
+    background-color: #1f1f3f; /* Darker background */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     min-width: 800px;
 }
-  
+
+/* Improved text visibility */
 .employee-dashboard-container h1, h2 {
     text-align: center;
-    color: #333;
+    color: #f5f5f5; /* Lightened text color for better contrast */
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 20px;
 }
-  
+
+/* Task list styling */
 .task-list {
     list-style-type: none;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 30px;
 }
-  
+
+/* Task items */
 .task-list .task {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    border: 1px solid #000;
-    color: #000;
-    
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #292948; /* Darker task background */
+    border-radius: 8px;
+    border: 1px solid #444;
+    color: #f5f5f5; /* Lightened text color */
 }
-  
+
+/* Completed task styling */
 .task-list .task.done {
     text-decoration: line-through;
-    background-color: #e6ffe6;
-    color: #000;
-    
+    background-color: #2a472a; /* Darker green */
+    color: #d3ffd3;
 }
-  
 
+/* Button styles */
 .complete-btn, .done-btn {
-    max-width: 100px;
-    padding: 5px 8px;  
-    background-color: #333;
+    max-width: 120px;
+    padding: 8px 12px;
+    background-color: #3e3e5e; /* Darker button */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 12px;  
+    font-size: 14px; /* Increased font size */
 }
 
 .complete-btn:hover, .done-btn:hover {
-    background-color: #555;
+    background-color: #555; /* Darker hover */
 }
-  
+
+/* Green button for done state */
 .task-list .done-btn {
-    background-color: #00b300;
-    max-width: 100px;
+    background-color: #00cc44;
 }
-  
+
 .task-list .done-btn:hover {
-    background-color: #008000;
+    background-color: #009933;
 }

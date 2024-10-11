@@ -1,8 +1,17 @@
 import ballerina/http;
 
 
+
+
 // Define the HTTP client to communicate with the Flask backend
 http:Client backendClient = check new("http://localhost:5000");
+@http:ServiceConfig {
+    cors: {
+        allowOrigins: ["*"],
+        allowHeaders: ["Content-Type"],
+        allowMethods: ["GET", "POST", "OPTIONS"]
+    }
+}
 
 // Define the Ballerina service
 service /taskDistributor on new http:Listener(8080) {
