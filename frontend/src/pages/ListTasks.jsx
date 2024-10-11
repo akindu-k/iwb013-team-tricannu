@@ -16,6 +16,11 @@ const ListTasks = () => {
     }
   };
 
+  const handleDelete = (index) => {
+    const updatedTasks = tasks.filter((task, taskIndex) => taskIndex !== index);
+    setTasks(updatedTasks); // Update tasks list after deletion
+  };
+
   return (
     <div className="list-tasks-container">
       <h2>List Tasks</h2>
@@ -32,7 +37,10 @@ const ListTasks = () => {
       </div>
       <ul className="task-list">
         {tasks.map((task, index) => (
-          <li key={index} className="task-item">{task}</li>
+          <li key={index} className="task-item">
+            {task}
+            <span className="delete-button" onClick={() => handleDelete(index)}>x</span>
+          </li>
         ))}
       </ul>
     </div>
