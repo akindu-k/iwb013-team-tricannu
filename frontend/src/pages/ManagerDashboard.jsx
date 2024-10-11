@@ -1,14 +1,3 @@
-// function ManagerDashboard() {
-//   return (
-//     <div>
-//       <h1>Manager Dashboard</h1>
-//     </div>
-//   );
-// }
-
-// export default ManagerDashboard;
-
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ManagerDashboard.css';  // Importing the Dashboard-specific CSS
