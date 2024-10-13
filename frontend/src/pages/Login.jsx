@@ -9,7 +9,7 @@ function Login() {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [role, setRole] = useState(queryParams.get('role')); // Default role
+  const [role] = useState(queryParams.get('role')); // Default role
   const navigate = useNavigate();
 
   console.log(role);
@@ -17,9 +17,7 @@ function Login() {
   const handleLogin = () => {
     // Mock authentication
     if (username && password) {
-      if (role == 'admin') {
-        navigate('/admin');
-      } else if (role == 'manager') {
+      if (role == 'manager') {
         navigate('/manager');
       } else {
         navigate('/employee');

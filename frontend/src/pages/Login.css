@@ -1,30 +1,56 @@
 /* General Body Styles */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #1a1a2e; /* Dark blue background for consistency */
+  background: linear-gradient(135deg, #1a1a2e, #16213e); /* Gradient background */
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 5s ease-in-out;
   height: 100vh;
   margin: 0;
 }
 
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Container for the Login Form */
 .login-container {
-  background-color: #6161ce; /* Keep the form background white */
+  background: linear-gradient(135deg, #6161ce, #3a3a8e); /* Gradient background for the form */
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   width: 100%;
   max-width: 400px;
   box-sizing: border-box;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Heading for Login */
 .login-container h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333; /* Dark text color for contrast */
+  color: #fff; /* White text color for contrast */
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* Form Styles */
@@ -37,23 +63,25 @@ form {
 label {
   margin-bottom: 8px;
   font-size: 14px;
-  color: #555;
+  color: #ddd; /* Light text color */
 }
 
 /* Input Styles */
 input[type="text"], input[type="password"], select {
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
   outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Input Focus Styles */
 input[type="text"]:focus, input[type="password"]:focus, select:focus {
   border-color: #ff9671; /* Highlight color for focus */
+  box-shadow: 0 0 8px rgba(255, 150, 113, 0.5); /* Glow effect */
 }
 
 /* Button Styles */
