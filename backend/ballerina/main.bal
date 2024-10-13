@@ -1,7 +1,7 @@
 import ballerina/http;
 import ballerina/io;
 
-json[] assignedtasksList= [];
+string[] assignedtasksList= [];
 
 http:Client selfClient = check new("http://localhost:8080");
 
@@ -40,14 +40,20 @@ service /taskDistributor on new http:Listener(8080) {
         io:println(assignedTasks.assigned_tasks);
 
         string:RegExp r = re `#`;
-        string[] splitsRegex = r.split(check assignedTasks.assigned_tasks);
+        assignedtasksList = r.split(check assignedTasks.assigned_tasks);
 
         
-        io:println(splitsRegex);
+        io:println(assignedtasksList);
         
         
         // Send the Flask response back to the frontend
-        check caller->respond(backendResp.getJsonPayload());
+        check caller->respond({assigned_tasks: assignedtasksList});
+    }
+
+    // GET method to return the list of assigned tasks
+    resource function get taskList(http:Caller caller) returns error? {
+        // Send the list of assigned tasks to the frontend
+        check caller->respond({assigned_tasks: assignedtasksList});
     }
 
     // resource function post taskList(http:Caller caller, http:Request req) returns error? {

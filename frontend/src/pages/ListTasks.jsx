@@ -6,6 +6,8 @@ const ListTasks = () => {
   const [tasks, setTasks] = useState([]);
   const [taskInput, setTaskInput] = useState('');
 
+  const [assignedTasks, setAssignedTasks] = useState([]);
+
   const handleTaskInputChange = (e) => {
     setTaskInput(e.target.value);
   };
@@ -26,7 +28,8 @@ const ListTasks = () => {
     console.log('Tasks:', tasks); // Debugging statement
     // Add code to send tasks to the backend
     const response = await axios.post('http://localhost:8080/taskDistributor/assignedTasks', {"tasks": tasks});
-    console.log('Response:', response.data); // Debugging statement
+    console.log('Response:', response.data.assigned_tasks); // Debugging statement
+    setAssignedTasks(response.data.assigned_tasks);
   }
 
   return (
@@ -52,6 +55,10 @@ const ListTasks = () => {
         ))}
       </ul>
       <button onClick={handleSubmitToBackend} className="submit-backend-button">Submit to Backend</button>
+      {assignedTasks && assignedTasks.map((task, index) => (
+        <p key={index} className="assigned-task">{task}</p>
+      )
+    )}
 
     </div>
   );

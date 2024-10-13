@@ -85,3 +85,11 @@ p {
 .delete-button:hover {
   background-color: #ff3333;
 }
+
+.assigned-task {
+  background-color: #555;
+  max-width: 400px;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
