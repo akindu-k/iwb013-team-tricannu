@@ -1,7 +1,9 @@
 import ballerina/http;
+import ballerina/io;
 
+json[] assignedtasksList= [];
 
-
+http:Client selfClient = check new("http://localhost:8080");
 
 // Define the HTTP client to communicate with the Flask backend
 http:Client backendClient = check new("http://localhost:5000");
@@ -32,9 +34,45 @@ service /taskDistributor on new http:Listener(8080) {
         backendResp.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
         backendResp.setHeader("Access-Control-Allow-Headers", "Content-Type");
         
+        // io:println(backendResp.getJsonPayload());
+        json assignedTasks = check backendResp.getJsonPayload();
+        // assignedtasksList.push(assignedTasks);
+        io:println(assignedTasks.assigned_tasks);
+
+        string:RegExp r = re `#`;
+        string[] splitsRegex = r.split(check assignedTasks.assigned_tasks);
+
+        
+        io:println(splitsRegex);
+        
         
         // Send the Flask response back to the frontend
         check caller->respond(backendResp.getJsonPayload());
     }
+
+    // resource function post taskList(http:Caller caller, http:Request req) returns error? {
+    //     json reqBody = check req.getJsonPayload();
+    //     // io:println(reqBody.tasks);
+    //     http:Request backendReq = new;
+    //     backendReq.setPayload(reqBody);
+
+    //     http:Response backendResp = check backendClient->post("/assign_tasks", backendReq);
+
+    //     backendResp.setHeader("Access-Control-Allow-Origin", "*"); // Adjust origin as needed
+    //     backendResp.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+    //     backendResp.setHeader("Access-Control-Allow-Headers", "Content-Type");
+        
+    //     // io:println(backendResp);
+    //     json assignedTasks = check backendResp.getJsonPayload();
+    //     assignedtasksList.push(assignedTasks);
+    //     io:println(assignedtasksList);
+        
+    //     // Send the Flask response back to the frontend
+    //     check caller->respond(backendResp.getJsonPayload());
+    // }
+
 }
+
+
+
 

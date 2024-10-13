@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './ListTasks.css';  // Importing the ListTasks-specific CSS
+import axios from 'axios';
 
 const ListTasks = () => {
   const [tasks, setTasks] = useState([]);
@@ -20,6 +21,13 @@ const ListTasks = () => {
     const updatedTasks = tasks.filter((task, taskIndex) => taskIndex !== index);
     setTasks(updatedTasks); // Update tasks list after deletion
   };
+
+  const handleSubmitToBackend = async () => {
+    console.log('Tasks:', tasks); // Debugging statement
+    // Add code to send tasks to the backend
+    const response = await axios.post('http://localhost:8080/taskDistributor/assignedTasks', {"tasks": tasks});
+    console.log('Response:', response.data); // Debugging statement
+  }
 
   return (
     <div className="list-tasks-container">
@@ -43,6 +51,8 @@ const ListTasks = () => {
           </li>
         ))}
       </ul>
+      <button onClick={handleSubmitToBackend} className="submit-backend-button">Submit to Backend</button>
+
     </div>
   );
 };

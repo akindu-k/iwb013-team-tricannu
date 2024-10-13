@@ -24,7 +24,7 @@ function EmployeeDashboard() {
   return (
     <div className="employee-dashboard-container">
       <h1>Employee Dashboard</h1>
-      <pre>{assignedTasks}</pre>
+      <p>{assignedTasks}</p>
     </div>
   );
 }

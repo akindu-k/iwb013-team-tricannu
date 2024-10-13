@@ -31,10 +31,11 @@ employees = """[
 # Route for getting assigned tasks
 @app.route('/assign_tasks', methods=['POST'])
 def get_assigned_tasks():
-    taskList = request.json.get('tasks', '')
+    taskList = request.json.get('tasks', [])
+    taskListStr = '\n'.join(taskList)
     prompt = ("This is an employee set and tasklist. Assign each task to the most suitable employee. "
-              "I want only the name and the assigned task. Remove bold, just the name and the task and nothing else.\n"
-              + employees + "\nTask: " + taskList)
+              "I want only the name and the assigned task. Remove bold, just the name and the task and nothing else.Add # as the delimetor to split one assignment from another. I need the answer as the following format. format: Alice - Develop a website#Bob - make a coffee.Don't add newline characters.Employees and tasks are as follows:\n"
+              + employees + "\nTask: " + taskListStr)
     response = model.generate_content(prompt)
     return jsonify({"assigned_tasks": response.text})
 
