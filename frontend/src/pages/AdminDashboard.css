@@ -130,6 +130,24 @@
     background-color: #f9fafb;
 }
 
+/* Actions column buttons */
+.table-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.table-actions .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+}
+
+/* Button container for form buttons */
+.button-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
 /* Select styles */
 .select-wrapper {
     position: relative;
@@ -166,11 +184,4 @@
 
 .select-item:hover {
     background-color: #f3f4f6;
-}
-
-/* Button container for better arrangement */
-.button-container {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
 }

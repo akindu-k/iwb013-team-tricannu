@@ -5,7 +5,7 @@ export default function AdminDashboard() {
     const [employees, setEmployees] = useState([]);
     const [name, setName] = useState('');
     const [skills, setSkills] = useState('');
-    const [availability, setAvailability] = useState('Full-time');
+    const [availability, setAvailability] = useState('Available');
     const [isEditing, setIsEditing] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(null);
 
@@ -24,7 +24,7 @@ export default function AdminDashboard() {
         }
         setName('');
         setSkills('');
-        setAvailability('Full-time');
+        setAvailability('Not Available');
     };
 
     const handleRemove = (index) => {
@@ -82,8 +82,8 @@ export default function AdminDashboard() {
                                         value={availability}
                                         onChange={(e) => setAvailability(e.target.value)}
                                     >
-                                        <option value="Full-time">Available</option>
-                                        <option value="Part-time">Not Available</option>
+                                        <option value="Available">Available</option>
+                                        <option value="Not Available">Not Available</option>
                                     </select>
                                 </div>
                             </div>
@@ -111,9 +111,11 @@ export default function AdminDashboard() {
                                         <td>{employee.name}</td>
                                         <td>{employee.skills}</td>
                                         <td>{employee.availability}</td>
-                                        <td>
+                                        <td >
+                                            <div className="table-actions"> 
                                             <button onClick={() => handleEdit(index)} className="button">Edit</button>
                                             <button onClick={() => handleRemove(index)} className="button">Remove</button>
+                                            </div>
                                         </td>
                                     </tr>
                                 ))}
