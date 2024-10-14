@@ -3,7 +3,6 @@ import Home from './pages/Home'; // Import the new Home component
 import Login from './pages/Login';
 import EmployeeDashboard from './pages/EmployeeDashboard';
 import ManagerDashboard from './pages/ManagerDashboard';
-import TextPrompt from './pages/TextPrompt';
 import ListTasks from './pages/ListTasks';
 import './App.css';
 
@@ -16,7 +15,6 @@ function App() {
         <Route path="/employee" element={<EmployeeDashboard />} />
         <Route path="/manager" element={<ManagerDashboard />} />
         <Route path="/list-tasks" element={<ListTasks />} />
-        <Route path="/text-prompt" element={<TextPrompt />} />
       </Routes>
     </Router>
   );
