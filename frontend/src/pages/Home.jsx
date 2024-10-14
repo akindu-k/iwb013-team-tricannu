@@ -14,6 +14,7 @@ function Home() {
         <div className="role-buttons">
           <Link to="/login?role=employee" className="btn">Employee Login</Link>
           <Link to="/login?role=manager" className="btn">Manager Login</Link>
+          <Link to="/login?role=admin" className="btn">Admin Login</Link>
         </div>
       </div>
     </div>

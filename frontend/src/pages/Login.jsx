@@ -17,7 +17,10 @@ function Login() {
   const handleLogin = () => {
     // Mock authentication
     if (username && password) {
-      if (role == 'manager') {
+      if (role == 'admin') {
+        navigate('/admin');
+      } 
+      else if (role == 'manager') {
         navigate('/manager');
       } else {
         navigate('/employee');
