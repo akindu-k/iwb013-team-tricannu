@@ -11,7 +11,6 @@ const ManagerDashboard = () => {
         <h2>Task Management</h2>
         <p>Click below to manage tasks.</p>
         <button onClick={() => navigate('/list-tasks')} className="dashboard-button">List Tasks</button>
-        {/* <button onClick={() => navigate('/text-prompt')} className="dashboard-button">Task as a Text Prompt</button> */}
       </div>
     </div>
   );
