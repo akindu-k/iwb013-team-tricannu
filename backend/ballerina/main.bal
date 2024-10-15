@@ -2,6 +2,7 @@ import ballerina/http;
 import ballerina/io;
 
 string[] assignedtasksList= [];
+json[] employeeList = [];
 
 http:Client selfClient = check new("http://localhost:8080");
 
@@ -56,26 +57,7 @@ service /taskDistributor on new http:Listener(8080) {
         check caller->respond({assigned_tasks: assignedtasksList});
     }
 
-    // resource function post taskList(http:Caller caller, http:Request req) returns error? {
-    //     json reqBody = check req.getJsonPayload();
-    //     // io:println(reqBody.tasks);
-    //     http:Request backendReq = new;
-    //     backendReq.setPayload(reqBody);
 
-    //     http:Response backendResp = check backendClient->post("/assign_tasks", backendReq);
-
-    //     backendResp.setHeader("Access-Control-Allow-Origin", "*"); // Adjust origin as needed
-    //     backendResp.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-    //     backendResp.setHeader("Access-Control-Allow-Headers", "Content-Type");
-        
-    //     // io:println(backendResp);
-    //     json assignedTasks = check backendResp.getJsonPayload();
-    //     assignedtasksList.push(assignedTasks);
-    //     io:println(assignedtasksList);
-        
-    //     // Send the Flask response back to the frontend
-    //     check caller->respond(backendResp.getJsonPayload());
-    // }
 
 }
 
