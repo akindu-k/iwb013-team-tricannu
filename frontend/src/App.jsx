@@ -5,6 +5,8 @@ import EmployeeDashboard from './pages/EmployeeDashboard';
 import ManagerDashboard from './pages/ManagerDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import ListTasks from './pages/ListTasks';
+import ContactUs from './pages/ContactUs';
+import About from './pages/About';
 import './App.css';
 
 
@@ -18,6 +20,8 @@ function App() {
         <Route path="/manager" element={<ManagerDashboard />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/list-tasks" element={<ListTasks />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );

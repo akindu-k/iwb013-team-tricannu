@@ -32,7 +32,7 @@
     text-decoration: none; /* Remove underline from links */
     color: #333; /* Dark text for light theme */
     font-weight: bold; /* Bold text */
-    transition: color 0.3s ease; /* Smooth color change on hover */
+    transition: color 0.4s ease, background-color 0.4s ease; /* Smooth color change */
 }
 
 /* Hover effects for nav links */
@@ -41,7 +41,10 @@
 }
 
 .nav-links li a:hover {
-    color: #c5daf0; /* Lighter blue color on hover */
+    color: #d4af37; /* Modern gold color on hover */
+    background-color: rgba(212, 175, 55, 0.2); /* Subtle gold background effect */
+    padding: 5px 10px; /* Padding around the text for the hover effect */
+    border-radius: 5px; /* Rounded corners for modern look */
 }
 
 /* Adjust the Home link position */
