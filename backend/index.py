@@ -39,6 +39,11 @@ def get_assigned_tasks():
     response = model.generate_content(prompt)
     return jsonify({"assigned_tasks": response.text})
 
+@app.route('/employee_details', methods=['POST'])
+def get_employee_details():
+    print(employees)
+    return jsonify({"employees": employees})
+
 # Run the Flask server on port 5000
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
