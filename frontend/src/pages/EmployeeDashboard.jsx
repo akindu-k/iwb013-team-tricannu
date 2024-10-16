@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './EmployeeDashboard.css';  // Import the updated CSS file
+import Navbar from './Navbar'; 
+
 
 function EmployeeDashboard() {
   const [assignedTasks, setAssignedTasks] = useState([]);
@@ -20,11 +22,14 @@ function EmployeeDashboard() {
   }, []);
 
   return (
+    <div className='employee-main'>
+      <Navbar />
     <div className="employee-dashboard-container">
       <h1>Employee Dashboard</h1>
       {assignedTasks && assignedTasks.map((task, index) => (
         <p key={index} className="assigned-task">{task}</p>
       ))}
+    </div>
     </div>
   );
 }

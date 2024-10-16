@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Login.css'; // Import your login.css here
-
+import Navbar from './Navbar';
 function Login() {
 
     const location = useLocation();
@@ -21,7 +21,7 @@ function Login() {
         navigate('/admin');
       } 
       else if (role == 'manager') {
-        navigate('/manager');
+        navigate('/list-tasks');
       } else {
         navigate('/employee');
       }
@@ -31,6 +31,8 @@ function Login() {
   };
 
   return (
+    <div className='login-main'>
+      <Navbar />
     <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={(e) => e.preventDefault()}>
@@ -52,17 +54,9 @@ function Login() {
             required 
           />
         </label>
-        {/* Uncomment this section if you want to include role selection */}
-        {/* <label>
-          Role: 
-          <select value={role} onChange={(e) => setRole(e.target.value)}>
-            <option value="employee">Employee</option>
-            <option value="manager">Manager</option>
-            <option value="admin">Admin</option>
-          </select>
-        </label> */}
         <button type="button" onClick={handleLogin}>Login</button>
       </form>
+    </div>
     </div>
   );
 }

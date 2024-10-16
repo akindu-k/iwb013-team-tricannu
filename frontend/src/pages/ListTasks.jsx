@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './ListTasks.css';  // Importing the ListTasks-specific CSS
 import axios from 'axios';
+import Navbar from './Navbar';
 
 const ListTasks = () => {
   const [tasks, setTasks] = useState([]);
@@ -33,6 +34,8 @@ const ListTasks = () => {
   }
 
   return (
+    <div className="list-main">
+      <Navbar />
     <div className="list-tasks-container">
       <h2>List Tasks</h2>
       <p>Add tasks one by one by pressing Submit.</p>
@@ -60,6 +63,7 @@ const ListTasks = () => {
       )
     )}
 
+    </div>
     </div>
   );
 };

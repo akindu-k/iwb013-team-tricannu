@@ -56,13 +56,6 @@ service /taskDistributor on new http:Listener(8080) {
         // Send the list of assigned tasks to the frontend
         check caller->respond({assigned_tasks: assignedtasksList});
     }
-
-
-
-    
-
-
-
 }
 
 
