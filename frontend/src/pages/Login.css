@@ -1,7 +1,11 @@
 /* General Body Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #1a1a2e, #16213e); /* Gradient background */
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #1a1a2e,
+    #16213e
+  ); /* Gradient background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,8 +14,7 @@ body {
   margin: 0;
 }
 
-
-.login-main{
+.login-main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +60,11 @@ nav {
 
 /* Container for the Login Form */
 .login-container {
-  background: linear-gradient(135deg, #6161ce, #3a3a8e); /* Gradient background for the form */
+  background: linear-gradient(
+    135deg,
+    #6161ce,
+    #3a3a8e
+  ); /* Gradient background for the form */
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -102,7 +109,9 @@ label {
 }
 
 /* Input Styles */
-input[type="text"], input[type="password"], select {
+input[type="text"],
+input[type="password"],
+select {
   padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -114,7 +123,9 @@ input[type="text"], input[type="password"], select {
 }
 
 /* Input Focus Styles */
-input[type="text"]:focus, input[type="password"]:focus, select:focus {
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
   border-color: #ff9671; /* Highlight color for focus */
   box-shadow: 0 0 8px rgba(255, 150, 113, 0.5); /* Glow effect */
 }
@@ -128,7 +139,8 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Button Hover Styles */
@@ -148,11 +160,11 @@ button:hover {
 /* Responsive for Smaller Screens */
 @media (max-width: 480px) {
   .login-container {
-      padding: 30px;
+    padding: 30px;
   }
 
   button {
-      padding: 10px;
-      font-size: 14px;
+    padding: 10px;
+    font-size: 14px;
   }
 }

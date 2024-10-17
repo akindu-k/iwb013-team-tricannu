@@ -1,14 +1,13 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home'; // Import the new Home component
-import Login from './pages/Login';
-import EmployeeDashboard from './pages/EmployeeDashboard';
-import AdminDashboard from './pages/AdminDashboard';
-import ListTasks from './pages/ListTasks';
-import ContactUs from './pages/ContactUs';
-import About from './pages/About';
-import OurServices from './pages/OurServices';
-import './App.css';
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home"; // Import the new Home component
+import Login from "./pages/Login";
+import EmployeeDashboard from "./pages/EmployeeDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
+import ListTasks from "./pages/ListTasks";
+import ContactUs from "./pages/ContactUs";
+import About from "./pages/About";
+import OurServices from "./pages/OurServices";
+import "./App.css";
 
 function App() {
   return (

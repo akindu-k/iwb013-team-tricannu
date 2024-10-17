@@ -1,7 +1,4 @@
-General Styles
-
-
-h2 {
+General Styles h2 {
   color: #ffffff; /* Update heading color to white */
 }
 
@@ -53,7 +50,9 @@ label {
   color: #555;
 }
 
-input[type="text"], input[type="password"], select {
+input[type="text"],
+input[type="password"],
+select {
   width: 100%;
   padding: 10px;
   margin: 5px 0 20px 0;

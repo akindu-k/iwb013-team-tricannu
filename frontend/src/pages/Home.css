@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: 'Georgia', serif; 
+  font-family: "Georgia", serif;
   overflow: hidden; /* Prevent scrolling for clean look */
 }
 
@@ -14,7 +14,7 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-image:  url("/src/assets/4b755524bd82dcbde3807c231f74482d.jpg");
+  background-image: url("/src/assets/4b755524bd82dcbde3807c231f74482d.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,7 +73,8 @@ body {
   border-radius: 50px;
   color: white;
   background-color: #bc881b; /* Dark Blue */
-  transition: transform 0.3s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+  transition: transform 0.3s ease, box-shadow 0.4s ease,
+    background-color 0.4s ease;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 2s ease-out;
 }

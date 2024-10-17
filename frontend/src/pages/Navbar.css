@@ -1,76 +1,76 @@
 /* Navbar Styling */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(227, 242, 253, 0.95);
-    box-shadow: 0 4px 10px rgba(130, 196, 224, 0.2); /* Deeper shadow for more depth */
-    padding: 5px 20px; /* Reduced padding for less height */
-    position: fixed; /* Keep the navbar at the top */
-    top: 0; /* Position at the top */
-    left: 0; /* Align to the left */
-    z-index: 1000; /* Ensure it's above other content */
-    height: 70px; /* Fixed height for the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(227, 242, 253, 0.95);
+  box-shadow: 0 4px 10px rgba(130, 196, 224, 0.2); /* Deeper shadow for more depth */
+  padding: 5px 20px; /* Reduced padding for less height */
+  position: fixed; /* Keep the navbar at the top */
+  top: 0; /* Position at the top */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Ensure it's above other content */
+  height: 70px; /* Fixed height for the navbar */
 }
 
 /* Navigation Links */
 .nav-links {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Display links in a row */
-    gap: 50px; /* Space between links */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Display links in a row */
+  gap: 50px; /* Space between links */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 .nav-links li {
-    font-size: 1.1rem; /* Font size for links */
-    transition: transform 0.3s; /* Smooth transform effect */
+  font-size: 1.1rem; /* Font size for links */
+  transition: transform 0.3s; /* Smooth transform effect */
 }
 
 .nav-links li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Dark text for light theme */
-    font-weight: bold; /* Bold text */
-    transition: color 0.4s ease, background-color 0.4s ease; /* Smooth color change */
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Dark text for light theme */
+  font-weight: bold; /* Bold text */
+  transition: color 0.4s ease, background-color 0.4s ease; /* Smooth color change */
 }
 
 /* Hover effects for nav links */
 .nav-links li:hover {
-    transform: translateY(-3px); /* Slight lift effect */
+  transform: translateY(-3px); /* Slight lift effect */
 }
 
 .nav-links li a:hover {
-    color: #d4af37; /* Modern gold color on hover */
-    background-color: rgba(212, 175, 55, 0.2); /* Subtle gold background effect */
-    padding: 5px 10px; /* Padding around the text for the hover effect */
-    border-radius: 5px; /* Rounded corners for modern look */
+  color: #d4af37; /* Modern gold color on hover */
+  background-color: rgba(212, 175, 55, 0.2); /* Subtle gold background effect */
+  padding: 5px 10px; /* Padding around the text for the hover effect */
+  border-radius: 5px; /* Rounded corners for modern look */
 }
 
 /* Adjust the Home link position */
 .nav-links li:first-child {
-    margin-left: 40px; 
+  margin-left: 40px;
 }
 
 /* Logo Container */
 .logo-container {
-    margin-right: 30px; /* Remove any extra margin on the logo */
-    display: flex;
-    align-items: center; /* Ensure the logo is vertically aligned */
+  margin-right: 30px; /* Remove any extra margin on the logo */
+  display: flex;
+  align-items: center; /* Ensure the logo is vertically aligned */
 }
 
 .logo {
-    width: 150px; /* Slightly smaller logo size */
-    height: auto; /* Keep aspect ratio */
+  width: 150px; /* Slightly smaller logo size */
+  height: auto; /* Keep aspect ratio */
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-    .nav-links {
-        gap: 20px; /* Reduce space for smaller screens */
-    }
+  .nav-links {
+    gap: 20px; /* Reduce space for smaller screens */
+  }
 
-    .logo {
-        width: 90px; /* Adjust logo size for mobile */
-    }
+  .logo {
+    width: 90px; /* Adjust logo size for mobile */
+  }
 }
