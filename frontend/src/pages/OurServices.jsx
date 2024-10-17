@@ -1,4 +1,3 @@
-// OurServices.jsx
 import "./OurServices.css";
 import Navbar from "./Navbar";
 
@@ -18,35 +17,39 @@ const OurServices = () => {
         <div className="about-us-content">
           {/* Services Section */}
           <div className="about-section">
-            <h2>Automated Task Assignment</h2>
+            <h2>AI-Driven Task Assignment</h2>
             <p>
-              Our AI-driven platform automatically assigns tasks to the
-              best-suited team members based on skills, availability, and
-              workload.
+              TaskMate uses advanced machine learning models, such as Gemini 1.5
+              Flash, to assign tasks based on employees&apos; skills,
+              availability, and workload. This ensures that tasks are allocated
+              efficiently, improving team productivity.
             </p>
           </div>
 
           <div className="about-section">
-            <h2>Real-time Collaboration</h2>
+            <h2>Optimized Team Collaboration</h2>
             <p>
-              Collaborate seamlessly with your team in real time. Share files,
-              chat, and stay updated on task progress all in one place.
+              Collaborate seamlessly within TaskMate. Keep track of your
+              team&apos;s progress, share updates, and communicate through
+              integrated tools that promote smooth workflow and coordination.
             </p>
           </div>
 
           <div className="about-section">
-            <h2>Project Tracking & Reporting</h2>
+            <h2>Task Tracking & Analytics</h2>
             <p>
-              Keep track of project milestones and generate reports to ensure
-              smooth progress and informed decision-making.
+              Monitor your project milestones with real-time task tracking and
+              analytics. TaskMate offers detailed reporting to help you make
+              data-driven decisions and keep your projects on schedule.
             </p>
           </div>
 
           <div className="about-section">
-            <h2>Third-party Tool Integration</h2>
+            <h2>Trello Integration</h2>
             <p>
-              We support integrations with tools like Trello, Slack, and Jira to
-              give you a unified workflow experience.
+              TaskMate integrates with Trello, allowing you to manage and track
+              your tasks within Trello boards while benefiting from
+              TaskMate&apos;s AI-driven task assignment and reporting features.
             </p>
           </div>
         </div>

@@ -10,30 +10,34 @@ const AboutUs = () => {
           <section className="about-section">
             <h2>Our Mission</h2>
             <p>
-              At TaskMaster, we are committed to streamlining the way teams
-              assign and manage their tasks. Our goal is to help companies
-              enhance productivity by offering an easy-to-use, efficient task
-              management system that integrates with various team workflows.
+              At TaskMate, we are dedicated to revolutionizing task management
+              by leveraging cutting-edge AI models. Our mission is to enhance
+              team efficiency through intelligent task assignments that match
+              employees&apos; skills and availability, reducing manual workload
+              and ensuring productivity across teams.
             </p>
           </section>
 
           <section className="about-section">
             <h2>What We Do</h2>
             <p>
-              TaskMaster provides intelligent task assignment using advanced
-              machine learning models. Our platform analyzes team capabilities,
-              deadlines, and task complexities to ensure optimal task
-              distribution, helping teams meet their project goals.
+              TaskMate utilizes the power of the Gemini-1.5-Flash LLM to assign
+              tasks to employees intelligently. Our platform evaluates team
+              members&apos; skills, availability, and task requirements to
+              provide the most efficient task distribution, improving project
+              outcomes and team performance.
             </p>
           </section>
 
           <section className="about-section">
             <h2>Our Story</h2>
             <p>
-              Founded in 2021, TaskMaster started as a small project to solve
-              the internal task management struggles of remote teams. Today, we
-              serve hundreds of companies worldwide, providing a smarter and
-              simpler solution to project management.
+              TaskMate was initiated on 1st September 2024 as part of the
+              Innovate with Ballerina competition. What began as an effort to
+              streamline task assignments using AI is now on a journey to offer
+              something valuable to teams worldwide. We believe in creating
+              tools that improve how people work, and TaskMate is here to
+              deliver that.
             </p>
           </section>
         </div>
