@@ -6,6 +6,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import ListTasks from './pages/ListTasks';
 import ContactUs from './pages/ContactUs';
 import About from './pages/About';
+import OurServices from './pages/OurServices';
 import './App.css';
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/list-tasks" element={<ListTasks />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<OurServices />} />
       </Routes>
     </Router>
   );

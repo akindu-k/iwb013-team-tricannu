@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './AdminDashboard.css';
+import Navbar from './Navbar'; 
 
 export default function AdminDashboard() {
     const [employees, setEmployees] = useState([]);
@@ -43,6 +44,7 @@ export default function AdminDashboard() {
 
     return (
         <div className="container">
+            <Navbar />
             <h1 className="text-2xl font-bold mb-4">Admin Dashboard</h1>
             <div className="grid md:grid-cols-2">
                 <div className="card">
