@@ -1,7 +1,10 @@
+/* Navbar */
 nav {
   position: relative;
   z-index: 1000; /* Ensure navbar stays on top */
 }
+
+/* Main container */
 .container {
   display: flex;
   flex-direction: column;
@@ -20,6 +23,7 @@ nav {
   overflow-y: auto; /* Enable vertical scrolling */
 }
 
+/* Grid Layout */
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -72,7 +76,12 @@ nav {
   color: #333;
 }
 
+/* Add Employee form content alignment */
 .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
 }
 
@@ -93,6 +102,7 @@ nav {
 .select {
   width: 100%;
   padding: 0.85rem;
+  margin-bottom: 1rem; /* Space between inputs */
   border: 1px solid #cbd5e0;
   border-radius: 0.5rem;
   font-size: 1rem;
@@ -140,17 +150,20 @@ nav {
   font-family: "Roboto", sans-serif;
 }
 
+/* Table cells and header */
 .table th,
 .table td {
   padding: 0.85rem;
   text-align: left;
   border-bottom: 1px solid #e2e8f0;
+  color: #000; /* Set text color to black */
 }
 
+/* Table header */
 .table th {
   font-weight: 700;
   background-color: #edf2f7;
-  color: #4a5568;
+  color: #333; /* Darker text for table headers */
 }
 
 .table-actions {

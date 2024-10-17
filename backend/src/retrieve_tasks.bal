@@ -1,5 +1,5 @@
-import ballerina/io;
 import ballerina/http;
+import ballerina/io;
 import ballerina/os;
 
 string apiKey = os:getEnv("TRELLO_API_KEY");
@@ -31,7 +31,7 @@ public function main() returns error? {
 function fetchTrelloTasks(string boardId) returns json|error {
     http:Client trelloClient = check new (trelloApiBaseUrl);
     string url = string `/boards/${boardId}/cards?key=${apiKey}&token=${apiToken}`;
-    
+
     http:Response|error response = trelloClient->get(url);
     if response is http:Response {
         json result = check response.getJsonPayload();
