@@ -19,6 +19,28 @@ http:Client backendClient = check new("http://localhost:5000");
 // Define the Ballerina service
 service /taskDistributor on new http:Listener(8080) {
 
+
+        resource function post employee_details(http:Caller caller, http:Request req) returns error? {
+
+        json reqBody = check req.getJsonPayload();
+
+        http:Request backendReq = new;
+        backendReq.setPayload(reqBody);
+        
+        // Send the request to the Flask backend and get the response
+        http:Response backendResp = check backendClient->post("/employee_details", backendReq);
+
+        backendResp.setHeader("Access-Control-Allow-Origin", "*"); 
+        backendResp.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+        backendResp.setHeader("Access-Control-Allow-Headers", "Content-Type");
+        
+        
+        json employeeList = check backendResp.getJsonPayload();
+        
+        io:println(employeeList);
+        
+    }
+
     // POST method to handle task assignment
     resource function post assignedTasks(http:Caller caller, http:Request req) returns error? {
         // Get the JSON payload from the frontend request
@@ -56,6 +78,9 @@ service /taskDistributor on new http:Listener(8080) {
         // Send the list of assigned tasks to the frontend
         check caller->respond({assigned_tasks: assignedtasksList});
     }
+
+
+
 }
 
 

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './AdminDashboard.css';
 import Navbar from './Navbar'; 
+import axios from 'axios';
 
 export default function AdminDashboard() {
     const [employees, setEmployees] = useState([]);
@@ -10,27 +11,50 @@ export default function AdminDashboard() {
     const [isEditing, setIsEditing] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(null);
 
+    const handleSubmitToBackend = async (updatedEmployees) => {
+        try {
+            const response = await axios.post('http://localhost:8080/taskDistributor/employee_details', { employees: updatedEmployees });
+            console.log("response", response);
+        } catch (error) {
+            console.error("Error sending employee details to backend:", error);
+        }
+    }
+
+
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const newEmployee = { name, skills, availability };
         if (isEditing) {
-            const updatedEmployees = employees.map((employee, index) => 
+            const employees = employees.map((employee, index) => 
                 index === currentIndex ? newEmployee : employee
             );
-            setEmployees(updatedEmployees);
+            setEmployees(employees);
             setIsEditing(false);
             setCurrentIndex(null);
         } else {
-            setEmployees([...employees, newEmployee]);
+
+        setEmployees((prevEmployees) => {
+            const updatedEmployees = isEditing
+                ? prevEmployees.map((employee, index) =>
+                    index === currentIndex ? newEmployee : employee
+                )
+                : [...prevEmployees, newEmployee];
+            handleSubmitToBackend(updatedEmployees);
+            return updatedEmployees;
+        });
         }
+
+        handleSubmitToBackend();
         setName('');
         setSkills('');
         setAvailability('Not Available');
     };
 
     const handleRemove = (index) => {
-        const updatedEmployees = employees.filter((_, i) => i !== index);
-        setEmployees(updatedEmployees);
+        const employees = employees.filter((_, i) => i !== index);
+        setEmployees(employees);
     };
 
     const handleEdit = (index) => {
