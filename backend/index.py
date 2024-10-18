@@ -17,6 +17,7 @@ employees = []
 
 @app.route('/employee_details', methods=['POST'])
 def get_employee_details():
+    global employees
     employees = request.json.get('employees', [])
     print(employees)
     return jsonify({"employees": employees})
@@ -30,6 +31,7 @@ def get_assigned_tasks():
     
     for i in range(len(employees)):
         employee_details_str += str(employees[i]) + "\n"
+    
     
     prompt = (
         "This is an employee set and tasklist. Assign each task to the most suitable employee. "
