@@ -8,7 +8,7 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
 - **Multi-User Portals**: Separate dashboards for Admins, Managers, and Employees.
   - **Admin Dashboard**: Manage employee details (add, edit, and remove employees).
   - **Manager Dashboard**: Create tasks and view task assignments.
-  - **Employee Dashboard**: View assigned tasks and update task status.
+  - **Employee Dashboard**: View assigned tasks.
 - **Trello Integration**: Option to import tasks from Trello boards directly into TaskMate.
 - **Ballerina-Python Flask Integration**: Seamless communication between frontend and backend services, ensuring real-time task updates.
 
