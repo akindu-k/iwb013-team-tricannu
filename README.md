@@ -81,6 +81,28 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
       npm run dev
       ```
 
+### Running the Application
+
+Make sure to run each part of the application (Python server, Ballerina server, and frontend) in **three separate terminals** to keep all components running concurrently.
+
+1. **Terminal 1**: Run the Python backend:
+    ```bash
+    cd backend
+    python3 index.py
+    ```
+
+2. **Terminal 2**: Run the Ballerina middleware:
+    ```bash
+    cd backend/ballerina
+    bal run main.bal
+    ```
+
+3. **Terminal 3**: Run the frontend:
+    ```bash
+    cd frontend
+    npm run dev
+    ```
+
 ### Usage
 
 1. **Admin Portal**: Manage employees by adding, editing, or removing them.
@@ -90,7 +112,7 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
 ### Screenshots
 
 #### Homepage
-![TaskMate Homepage](https://i.ibb.co/4MGG8qF/Screenshot-from-2024-10-20-01-47-30.png)
+_Add your homepage screenshot here._
 
 #### Admin Dashboard
 ![Admin Dashboard](https://i.ibb.co/8Y6MNZ6/Screenshot-from-2024-10-20-01-55-47.png)
