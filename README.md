@@ -42,6 +42,7 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
     cd iwb013-team-tricannu
     ```
 
+
 2. **Backend Setup**:
     - Navigate to the `backend` folder:
       ```bash
@@ -52,7 +53,7 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
       export GEMINI_API_KEY=your-gemini-api-key
       ```
 
-    - Run the Python backend:
+    - Run the Python backend on **Terminal 1**:
       ```bash
       python3 index.py
       ```
@@ -62,7 +63,7 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
       ```bash
       cd backend/ballerina
       ```
-    - Start the Ballerina service:
+    - Start the Ballerina service on **Terminal 2**:
       ```bash
       bal run main.bal
       ```
@@ -76,43 +77,25 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
       ```bash
       npm install
       ```
-    - Start the frontend:
+    - Start the frontend on **Terminal 3**:
       ```bash
       npm run dev
       ```
 
 ### Running the Application
 
-Make sure to run each part of the application (Python server, Ballerina server, and frontend) in **three separate terminals** to keep all components running concurrently.
 
-1. **Terminal 1**: Run the Python backend:
-    ```bash
-    cd backend
-    python3 index.py
-    ```
-
-2. **Terminal 2**: Run the Ballerina middleware:
-    ```bash
-    cd backend/ballerina
-    bal run main.bal
-    ```
-
-3. **Terminal 3**: Run the frontend:
-    ```bash
-    cd frontend
-    npm run dev
-    ```
 
 ### Usage
 
 1. **Admin Portal**: Manage employees by adding, editing, or removing them.
 2. **Manager Portal**: Create tasks and let the AI assign them to the most suitable employee.
-3. **Employee Portal**: View and update assigned tasks.
+3. **Employee Portal**: View assigned tasks.
 
 ### Screenshots
 
 #### Homepage
-_Add your homepage screenshot here._
+![TaskMate Homepage](https://i.ibb.co/4MGG8qF/Screenshot-from-2024-10-20-01-47-30.png)
 
 #### Admin Dashboard
 ![Admin Dashboard](https://i.ibb.co/8Y6MNZ6/Screenshot-from-2024-10-20-01-55-47.png)
@@ -130,6 +113,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contributors
 
 - Akindu Kalhan - [akindu-k](https://github.com/akindu-k)
+- Thusith Wijewardena
+- Dilshab Kularathna
+- Kithmins Weerasinghe
 
 ## Acknowledgements
 
