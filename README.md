@@ -43,14 +43,15 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
     ```
 
 2. **Backend Setup**:
-    - Before running the Python server, you need to export the **Gemini API Key**:
-      ```bash
-      export GEMINI_API_KEY=your-gemini-api-key
-      ```
     - Navigate to the `backend` folder:
       ```bash
       cd backend
       ```
+    - Before running the Python server, you need to export the **Gemini API Key**:
+      ```bash
+      export GEMINI_API_KEY=your-gemini-api-key
+      ```
+
     - Run the Python backend:
       ```bash
       python3 index.py
