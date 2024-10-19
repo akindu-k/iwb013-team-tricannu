@@ -1,4 +1,4 @@
-# TaskMate - AI-Powered Task Management System
+![image](https://github.com/user-attachments/assets/97e36a16-69e4-476e-ba8d-ad1fec10b787)# TaskMate - AI-Powered Task Management System
 
 Welcome to **TaskMate**, an innovative AI-powered solution designed to streamline task management and employee coordination. This system ensures tasks are assigned to the most suitable employees based on their skills and availability, helping organizations enhance productivity and simplify task workflows.
 
@@ -28,10 +28,10 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
 ## Getting Started
 
 ### Prerequisites
-- **Node.js** (for running the frontend)
-- **Python** (for the backend)
-- **Ballerina** (for middleware integration)
-- **Trello API** (optional, for Trello integration)
+- **[Node.js](https://nodejs.org/en)** (for running the frontend)
+- **[Python](https://www.python.org/)** (for the backend)
+- **[Ballerina](https://ballerina.io/)** (for middleware integration)
+- **[Trello API](https://developer.atlassian.com/cloud/trello/)** (optional, for Trello integration)
 
 ### Installation
 
@@ -88,16 +88,16 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
 ### Screenshots
 
 #### Homepage
-![TaskMate Homepage](https://ibb.co/2PQQv9F)
+![TaskMate Homepage](https://i.ibb.co/4MGG8qF/Screenshot-from-2024-10-20-01-47-30.png)
 
 #### Admin Dashboard
-![Admin Dashboard](path/to/admin-dashboard-image)
+![Admin Dashboard](https://i.ibb.co/8Y6MNZ6/Screenshot-from-2024-10-20-01-55-47.png)
 
 #### Manager Dashboard
-![Manager Dashboard](path/to/manager-dashboard-image)
+![Manager Dashboard](https://i.ibb.co/qWYffjG/Screenshot-from-2024-10-20-01-59-20.png)
 
 #### Employee Dashboard
-![Employee Dashboard](path/to/employee-dashboard-image)
+![Employee Dashboard](https://i.ibb.co/BKvyfxS/Screenshot-from-2024-10-20-02-01-49.png)
 
 ## License
 
@@ -109,4 +109,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-- The TaskMate project was developed as part of the team **Tricannu** for the course **IWB013** at [University of Moratuwa](https://uom.lk).
+- The TaskMate project was developed as part of the team **Tricannu** for the [Innovate with Ballerina](https://innovatewithballerina.com/).
