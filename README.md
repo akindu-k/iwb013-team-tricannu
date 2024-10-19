@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/97e36a16-69e4-476e-ba8d-ad1fec10b787)# TaskMate - AI-Powered Task Management System
+# TaskMate - AI-Powered Task Management System
 
 Welcome to **TaskMate**, an innovative AI-powered solution designed to streamline task management and employee coordination. This system ensures tasks are assigned to the most suitable employees based on their skills and availability, helping organizations enhance productivity and simplify task workflows.
 
@@ -31,6 +31,7 @@ Welcome to **TaskMate**, an innovative AI-powered solution designed to streamlin
 - **[Node.js](https://nodejs.org/en)** (for running the frontend)
 - **[Python](https://www.python.org/)** (for the backend)
 - **[Ballerina](https://ballerina.io/)** (for middleware integration)
+- **[Gemini API](https://aistudio.google.com/app/apikey)** (export the Gemini API key before running the Python server)
 - **[Trello API](https://developer.atlassian.com/cloud/trello/)** (optional, for Trello integration)
 
 ### Installation
