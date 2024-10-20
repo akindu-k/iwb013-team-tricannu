@@ -113,7 +113,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contributors
 
 - Akindu Kalhan - [akindu-k](https://github.com/akindu-k)
-- Thusith Wijewardena - [thusithvj] (https://github.com/thusithvj)
+- Thusith Wijewardena - [thusithvj](https://github.com/thusithvj)
 - Dilshan Kularathna - 
 - Kithmina Weerasinghe
 
