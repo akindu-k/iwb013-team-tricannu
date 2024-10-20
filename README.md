@@ -114,7 +114,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Akindu Kalhan - [akindu-k](https://github.com/akindu-k)
 - Thusith Wijewardena - [thusithvj](https://github.com/thusithvj)
-- Dilshan Kularathna - 
+- Dilshan Kularathna - [DilshanKularathna](https://github.com/DilshanKularathna) 
 - Kithmina Weerasinghe - [KithminaW](https://github.com/KithminaW)
 
 ## Acknowledgements
